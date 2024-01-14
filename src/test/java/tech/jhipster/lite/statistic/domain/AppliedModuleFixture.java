@@ -3,7 +3,7 @@ package tech.jhipster.lite.statistic.domain;
 import java.time.Instant;
 import java.util.Map;
 import java.util.UUID;
-import tech.jhipster.lite.generator.slug.domain.JHLiteModuleSlug;
+import tech.jhipster.lite.module.domain.resource.JHLiteModuleSlug;
 
 public final class AppliedModuleFixture {
 

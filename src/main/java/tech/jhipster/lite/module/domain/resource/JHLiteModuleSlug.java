@@ -1,11 +1,10 @@
-package tech.jhipster.lite.generator.slug.domain;
+package tech.jhipster.lite.module.domain.resource;
 
 import java.util.Map;
 import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleSlugFactory;
 
 public enum JHLiteModuleSlug implements JHipsterModuleSlugFactory {
   ANGULAR_CORE("angular-core"),

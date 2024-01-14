@@ -1,6 +1,6 @@
 package tech.jhipster.lite.generator.server.springboot.database.mongodb.infrastructure.primary;
 
-import static tech.jhipster.lite.generator.slug.domain.JHLiteModuleSlug.MONGODB;
+import static tech.jhipster.lite.module.domain.resource.JHLiteModuleSlug.MONGODB;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

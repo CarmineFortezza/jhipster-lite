@@ -1,8 +1,8 @@
 package tech.jhipster.lite.generator.server.springboot.database.mariadb.infrastructure.primary;
 
 import static tech.jhipster.lite.generator.slug.domain.JHLiteFeatureSlug.JPA_PERSISTENCE;
-import static tech.jhipster.lite.generator.slug.domain.JHLiteModuleSlug.MARIADB;
-import static tech.jhipster.lite.generator.slug.domain.JHLiteModuleSlug.SPRING_BOOT;
+import static tech.jhipster.lite.module.domain.resource.JHLiteModuleSlug.MARIADB;
+import static tech.jhipster.lite.module.domain.resource.JHLiteModuleSlug.SPRING_BOOT;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

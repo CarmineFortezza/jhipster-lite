@@ -5,7 +5,7 @@ import static tech.jhipster.lite.generator.slug.domain.JHLiteFeatureSlug.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import tech.jhipster.lite.generator.server.javatool.base.application.JavaBaseApplicationService;
-import tech.jhipster.lite.generator.slug.domain.JHLiteModuleSlug;
+import tech.jhipster.lite.module.domain.resource.JHLiteModuleSlug;
 import tech.jhipster.lite.module.domain.resource.JHipsterModuleOrganization;
 import tech.jhipster.lite.module.domain.resource.JHipsterModulePropertiesDefinition;
 import tech.jhipster.lite.module.domain.resource.JHipsterModuleResource;

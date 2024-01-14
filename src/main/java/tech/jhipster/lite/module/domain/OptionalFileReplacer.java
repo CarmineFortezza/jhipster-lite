@@ -1,8 +1,7 @@
-package tech.jhipster.lite.module.domain.replacement;
+package tech.jhipster.lite.module.domain;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import tech.jhipster.lite.module.domain.JHipsterProjectFilePath;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 record OptionalFileReplacer(JHipsterProjectFilePath file, OptionalReplacer replacement) implements ContentReplacer {

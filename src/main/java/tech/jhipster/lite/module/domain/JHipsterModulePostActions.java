@@ -1,8 +1,10 @@
-package tech.jhipster.lite.module.domain.postaction;
+package tech.jhipster.lite.module.domain;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import tech.jhipster.lite.module.domain.JHipsterModule.JHipsterModuleBuilder;
+import tech.jhipster.lite.module.domain.postaction.JHipsterModuleExecutionContext;
+import tech.jhipster.lite.module.domain.postaction.RunnableInContext;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class JHipsterModulePostActions {

@@ -1,6 +1,7 @@
-package tech.jhipster.lite.module.domain.replacement;
+package tech.jhipster.lite.module.domain;
 
-import tech.jhipster.lite.module.domain.JHipsterProjectFilePath;
+import tech.jhipster.lite.module.domain.replacement.MandatoryReplacementException;
+import tech.jhipster.lite.module.domain.replacement.MandatoryReplacer;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public record MandatoryFileReplacer(JHipsterProjectFilePath file, MandatoryReplacer replacement) implements ContentReplacer {

@@ -9,7 +9,7 @@ import tech.jhipster.lite.module.domain.file.JHipsterSource;
 import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.replacement.ElementReplacer;
 import tech.jhipster.lite.module.domain.replacement.RegexReplacer;
-import tech.jhipster.lite.module.domain.replacement.TextNeedleBeforeReplacer;
+import tech.jhipster.lite.module.domain.TextNeedleBeforeReplacer;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class AngularJwtModuleFactory {

@@ -12,7 +12,6 @@ import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommands;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependenciesVersionsRepository;
 import tech.jhipster.lite.module.domain.javadependency.ProjectJavaDependenciesRepository;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
-import tech.jhipster.lite.module.domain.replacement.ContentReplacer;
 import tech.jhipster.lite.module.domain.replacement.ContentReplacers;
 import tech.jhipster.lite.shared.error.domain.Assert;
 

@@ -1,4 +1,4 @@
-package tech.jhipster.lite.module.domain.file;
+package tech.jhipster.lite.module.domain;
 
 import java.util.Map;
 

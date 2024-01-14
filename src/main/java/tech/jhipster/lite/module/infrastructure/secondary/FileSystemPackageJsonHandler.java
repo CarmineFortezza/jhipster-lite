@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 import tech.jhipster.lite.module.domain.Indentation;
 import tech.jhipster.lite.module.domain.npm.NpmVersionSource;
 import tech.jhipster.lite.module.domain.npm.NpmVersions;
-import tech.jhipster.lite.module.domain.packagejson.JHipsterModulePackageJson;
+import tech.jhipster.lite.module.domain.JHipsterModulePackageJson;
 import tech.jhipster.lite.module.domain.packagejson.PackageJsonDependencies;
 import tech.jhipster.lite.module.domain.packagejson.PackageJsonDependency;
 import tech.jhipster.lite.module.domain.packagejson.PackageJsonType;

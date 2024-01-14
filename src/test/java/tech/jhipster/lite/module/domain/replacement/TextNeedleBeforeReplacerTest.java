@@ -5,6 +5,7 @@ import static tech.jhipster.lite.module.domain.replacement.ReplacementCondition.
 
 import org.junit.jupiter.api.Test;
 import tech.jhipster.lite.UnitTest;
+import tech.jhipster.lite.module.domain.TextNeedleBeforeReplacer;
 
 @UnitTest
 class TextNeedleBeforeReplacerTest {

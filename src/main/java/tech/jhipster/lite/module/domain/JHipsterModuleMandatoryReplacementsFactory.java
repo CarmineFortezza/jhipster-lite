@@ -1,8 +1,9 @@
-package tech.jhipster.lite.module.domain.replacement;
+package tech.jhipster.lite.module.domain;
 
 import java.util.stream.Stream;
 import tech.jhipster.lite.module.domain.JHipsterModule.JHipsterModuleBuilder;
-import tech.jhipster.lite.module.domain.JHipsterProjectFilePath;
+import tech.jhipster.lite.module.domain.replacement.ElementReplacer;
+import tech.jhipster.lite.module.domain.replacement.MandatoryReplacer;
 
 public class JHipsterModuleMandatoryReplacementsFactory extends JHipsterModuleReplacementsFactory {
 

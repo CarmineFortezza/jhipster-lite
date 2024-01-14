@@ -1,8 +1,11 @@
-package tech.jhipster.lite.module.domain.javaproperties;
+package tech.jhipster.lite.module.domain;
 
 import java.util.HashMap;
 import java.util.Map;
 import tech.jhipster.lite.module.domain.JHipsterModule.JHipsterModuleBuilder;
+import tech.jhipster.lite.module.domain.javaproperties.Comment;
+import tech.jhipster.lite.module.domain.javaproperties.PropertyKey;
+import tech.jhipster.lite.module.domain.javaproperties.PropertyValue;
 import tech.jhipster.lite.shared.collection.domain.JHipsterCollections;
 import tech.jhipster.lite.shared.error.domain.Assert;
 

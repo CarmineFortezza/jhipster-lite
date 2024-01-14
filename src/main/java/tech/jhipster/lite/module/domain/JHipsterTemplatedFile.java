@@ -1,8 +1,7 @@
-package tech.jhipster.lite.module.domain.file;
+package tech.jhipster.lite.module.domain;
 
 import java.nio.file.Path;
-import tech.jhipster.lite.module.domain.JHipsterModuleContext;
-import tech.jhipster.lite.module.domain.ProjectFiles;
+
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
 import tech.jhipster.lite.shared.error.domain.Assert;
 

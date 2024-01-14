@@ -1,14 +1,5 @@
-package tech.jhipster.lite.module.domain.file;
+package tech.jhipster.lite.module.domain;
 
-import static org.assertj.core.api.Assertions.*;
-import static org.mockito.Mockito.*;
-import static tech.jhipster.lite.module.domain.JHipsterModulesFixture.*;
-
-import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -16,7 +7,18 @@ import org.mockito.Mock;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import tech.jhipster.lite.UnitTest;
-import tech.jhipster.lite.module.domain.ProjectFiles;
+import tech.jhipster.lite.module.domain.file.JHipsterSource;
+
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.mockito.Mockito.anyString;
+import static org.mockito.Mockito.lenient;
+import static tech.jhipster.lite.module.domain.JHipsterModulesFixture.context;
 
 @UnitTest
 @ExtendWith(MockitoExtension.class)

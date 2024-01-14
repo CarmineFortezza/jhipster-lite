@@ -29,7 +29,7 @@ import tech.jhipster.lite.module.domain.javadependency.JavaDependency;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyScope;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
 import tech.jhipster.lite.module.domain.replacement.ContentReplacers;
-import tech.jhipster.lite.module.domain.replacement.MandatoryFileReplacer;
+import tech.jhipster.lite.module.domain.MandatoryFileReplacer;
 import tech.jhipster.lite.module.domain.replacement.MandatoryReplacer;
 import tech.jhipster.lite.module.domain.replacement.RegexNeedleBeforeReplacer;
 import tech.jhipster.lite.module.domain.replacement.RegexReplacer;

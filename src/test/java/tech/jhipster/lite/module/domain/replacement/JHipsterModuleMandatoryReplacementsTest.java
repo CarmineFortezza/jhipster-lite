@@ -9,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import org.junit.jupiter.api.Test;
 import tech.jhipster.lite.UnitTest;
+import tech.jhipster.lite.module.domain.JHipsterModuleMandatoryReplacementsFactory;
 import tech.jhipster.lite.module.domain.JHipsterModulesFixture;
 import tech.jhipster.lite.module.domain.JHipsterProjectFilePath;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;

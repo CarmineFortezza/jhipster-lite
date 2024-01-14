@@ -1,11 +1,11 @@
-package tech.jhipster.lite.module.domain.file;
+package tech.jhipster.lite.module.domain;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+
 import tech.jhipster.lite.module.domain.JHipsterModule.JHipsterModuleBuilder;
-import tech.jhipster.lite.module.domain.JHipsterModuleUpgrade;
-import tech.jhipster.lite.module.domain.JHipsterProjectFilePath;
+import tech.jhipster.lite.module.domain.file.*;
 import tech.jhipster.lite.shared.collection.domain.JHipsterCollections;
 import tech.jhipster.lite.shared.error.domain.Assert;
 

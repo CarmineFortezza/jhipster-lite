@@ -1,6 +1,4 @@
-package tech.jhipster.lite.module.domain.replacement;
-
-import tech.jhipster.lite.module.domain.JHipsterProjectFilePath;
+package tech.jhipster.lite.module.domain;
 
 public interface ContentReplacer {
   JHipsterProjectFilePath file();

@@ -1,5 +1,6 @@
-package tech.jhipster.lite.module.domain.replacement;
+package tech.jhipster.lite.module.domain;
 
+import tech.jhipster.lite.module.domain.replacement.ElementReplacer;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 record OptionalReplacer(ElementReplacer replacer, String updatedValue) {

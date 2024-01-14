@@ -1,7 +1,11 @@
-package tech.jhipster.lite.module.domain.resource;
+package tech.jhipster.lite.module.domain.landscape;
 
 import tech.jhipster.lite.module.domain.JHipsterModuleFactory;
 import tech.jhipster.lite.module.domain.JHipsterModuleSlug;
+import tech.jhipster.lite.module.domain.resource.JHipsterModuleApiDoc;
+import tech.jhipster.lite.module.domain.resource.JHipsterModulePropertiesDefinition;
+import tech.jhipster.lite.module.domain.resource.JHipsterModuleSlugFactory;
+import tech.jhipster.lite.module.domain.resource.JHipsterModuleTags;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class JHipsterModuleResource {

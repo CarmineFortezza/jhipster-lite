@@ -6,8 +6,8 @@ import static tech.jhipster.lite.module.domain.resource.JHLiteModuleSlug.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import tech.jhipster.lite.generator.server.javatool.jacoco.application.JacocoApplicationService;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleOrganization;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleResource;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleOrganization;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleResource;
 
 @Configuration
 class JacocoThresholdModuleConfiguration {

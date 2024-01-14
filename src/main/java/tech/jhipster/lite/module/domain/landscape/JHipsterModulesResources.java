@@ -1,4 +1,4 @@
-package tech.jhipster.lite.module.domain.resource;
+package tech.jhipster.lite.module.domain.landscape;
 
 import java.util.Collection;
 import java.util.Collections;
@@ -13,6 +13,9 @@ import org.slf4j.LoggerFactory;
 import tech.jhipster.lite.module.domain.JHipsterModule;
 import tech.jhipster.lite.module.domain.JHipsterModuleSlug;
 import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
+import tech.jhipster.lite.module.domain.resource.DuplicatedSlugException;
+import tech.jhipster.lite.module.domain.resource.JHipsterHiddenModules;
+import tech.jhipster.lite.module.domain.resource.UnknownSlugException;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class JHipsterModulesResources {

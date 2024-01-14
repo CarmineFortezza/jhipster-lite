@@ -8,7 +8,7 @@ import tech.jhipster.lite.JsonHelper;
 import tech.jhipster.lite.UnitTest;
 import tech.jhipster.lite.module.domain.landscape.JHipsterLandscape;
 import tech.jhipster.lite.module.domain.landscape.JHipsterLandscapeFixture;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleResource;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleResource;
 
 @UnitTest
 class RestJHipsterLandscapeTest {

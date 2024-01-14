@@ -11,7 +11,6 @@ import java.util.stream.Stream;
 import tech.jhipster.lite.module.domain.JHipsterFeatureSlug;
 import tech.jhipster.lite.module.domain.JHipsterModuleSlug;
 import tech.jhipster.lite.module.domain.JHipsterSlug;
-import tech.jhipster.lite.module.domain.resource.JHipsterModulesResources;
 
 public class JHipsterLandscape {
 

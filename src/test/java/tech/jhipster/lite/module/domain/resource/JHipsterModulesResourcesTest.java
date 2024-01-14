@@ -7,6 +7,8 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import tech.jhipster.lite.UnitTest;
 import tech.jhipster.lite.module.domain.JHipsterModuleSlug;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleResource;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModulesResources;
 import tech.jhipster.lite.shared.error.domain.MissingMandatoryValueException;
 
 @UnitTest

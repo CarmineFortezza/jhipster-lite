@@ -4,7 +4,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.media.Schema.RequiredMode;
 import java.util.Collection;
 import java.util.Comparator;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleResource;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleResource;
 
 @Schema(name = "JHipsterModuleCategory", description = "Information for a module category")
 class RestJHipsterModuleCategory {

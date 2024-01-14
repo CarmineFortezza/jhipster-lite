@@ -6,7 +6,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import tech.jhipster.lite.module.domain.JHipsterModuleFactory;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleOrganization.JHipsterModuleOrganizationBuilder;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleOrganization;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleOrganization.JHipsterModuleOrganizationBuilder;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleResource;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModulesResources;
 import tech.jhipster.lite.module.domain.resource.JHipsterModuleTags.JHipsterModuleTagsBuilder;
 
 public final class JHipsterModulesResourceFixture {

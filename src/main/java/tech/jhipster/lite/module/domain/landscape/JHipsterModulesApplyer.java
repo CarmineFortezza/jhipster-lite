@@ -1,4 +1,4 @@
-package tech.jhipster.lite.module.domain;
+package tech.jhipster.lite.module.domain.landscape;
 
 import static tech.jhipster.lite.module.domain.properties.SpringConfigurationFormat.PROPERTIES;
 
@@ -7,6 +7,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.function.Function;
 import java.util.stream.Stream;
+import tech.jhipster.lite.module.domain.*;
 import tech.jhipster.lite.module.domain.git.GitRepository;
 import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommands;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependenciesVersionsRepository;

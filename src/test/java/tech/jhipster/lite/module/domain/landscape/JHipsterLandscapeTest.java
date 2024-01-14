@@ -11,7 +11,6 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import tech.jhipster.lite.UnitTest;
 import tech.jhipster.lite.module.domain.JHipsterFeatureSlug;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleResource;
 
 @UnitTest
 class JHipsterLandscapeTest {

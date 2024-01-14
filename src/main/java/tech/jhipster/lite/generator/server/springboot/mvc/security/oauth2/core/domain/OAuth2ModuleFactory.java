@@ -4,13 +4,13 @@ import static tech.jhipster.lite.generator.server.springboot.mvc.security.common
 import static tech.jhipster.lite.module.domain.JHipsterModule.*;
 
 import tech.jhipster.lite.module.domain.JHipsterModule;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.docker.DockerImageVersion;
 import tech.jhipster.lite.module.domain.docker.DockerImages;
 import tech.jhipster.lite.module.domain.file.JHipsterDestination;
 import tech.jhipster.lite.module.domain.file.JHipsterSource;
 import tech.jhipster.lite.module.domain.javabuild.GroupId;
 import tech.jhipster.lite.module.domain.javaproperties.PropertyValue;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.TextNeedleBeforeReplacer;
 import tech.jhipster.lite.shared.error.domain.Assert;
 

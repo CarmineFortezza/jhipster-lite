@@ -5,8 +5,8 @@ import static tech.jhipster.lite.module.domain.resource.JHLiteModuleSlug.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import tech.jhipster.lite.generator.ci.github.actions.application.GitHubActionsApplicationService;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleOrganization;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleResource;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleOrganization;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleResource;
 
 @Configuration
 class GitHubActionsModuleConfiguration {

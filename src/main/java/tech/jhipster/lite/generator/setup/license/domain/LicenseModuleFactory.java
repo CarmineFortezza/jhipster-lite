@@ -4,8 +4,8 @@ import static tech.jhipster.lite.module.domain.JHipsterModule.*;
 
 import java.time.Year;
 import tech.jhipster.lite.module.domain.JHipsterModule;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.file.JHipsterSource;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 
 public class LicenseModuleFactory {
 

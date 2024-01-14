@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 import tech.jhipster.lite.generator.server.springboot.mvc.security.jwt.domain.JwtAuthenticationModuleFactory;
 import tech.jhipster.lite.generator.server.springboot.mvc.security.jwt.domain.JwtBasicAuthModuleFactory;
 import tech.jhipster.lite.module.domain.JHipsterModule;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 
 @Service
 public class JwtAuthenticationApplicationService {

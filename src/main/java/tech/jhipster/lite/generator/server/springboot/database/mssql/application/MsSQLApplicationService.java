@@ -3,8 +3,8 @@ package tech.jhipster.lite.generator.server.springboot.database.mssql.applicatio
 import org.springframework.stereotype.Service;
 import tech.jhipster.lite.generator.server.springboot.database.mssql.domain.MsSQLModuleFactory;
 import tech.jhipster.lite.module.domain.JHipsterModule;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.docker.DockerImages;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 
 @Service
 public class MsSQLApplicationService {

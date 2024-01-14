@@ -3,7 +3,7 @@ package tech.jhipster.lite.generator.setup.license.application;
 import org.springframework.stereotype.Service;
 import tech.jhipster.lite.generator.setup.license.domain.LicenseModuleFactory;
 import tech.jhipster.lite.module.domain.JHipsterModule;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 
 @Service
 public class LicenseApplicationService {

@@ -8,8 +8,6 @@ import java.util.function.Function;
 import java.util.stream.Stream;
 import tech.jhipster.lite.module.domain.JHipsterFeatureSlug;
 import tech.jhipster.lite.module.domain.JHipsterModuleSlug;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleResource;
-import tech.jhipster.lite.module.domain.resource.JHipsterModulesResources;
 
 public final class JHipsterLandscapeFixture {
 

@@ -8,10 +8,10 @@ import static tech.jhipster.lite.module.domain.resource.JHipsterModulePropertyDe
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import tech.jhipster.lite.generator.server.springboot.mvc.security.oauth2.okta.application.OAuth2OktaSecurityApplicationService;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleOrganization;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleOrganization;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleResource;
 import tech.jhipster.lite.module.domain.resource.JHipsterModulePropertiesDefinition;
 import tech.jhipster.lite.module.domain.resource.JHipsterModulePropertyDefinition;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleResource;
 
 @Configuration
 class OAuth2OktaModuleConfiguration {

@@ -6,9 +6,9 @@ import static tech.jhipster.lite.module.domain.packagejson.VersionSource.*;
 import tech.jhipster.lite.generator.client.common.domain.ClientsModulesFactory;
 import tech.jhipster.lite.module.domain.Indentation;
 import tech.jhipster.lite.module.domain.JHipsterModule;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.file.JHipsterSource;
 import tech.jhipster.lite.module.domain.packagejson.PackageName;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 
 public class AngularModuleFactory {
 

@@ -2,7 +2,7 @@ package tech.jhipster.lite.module.domain.properties;
 
 import tech.jhipster.lite.shared.error.domain.GeneratorException;
 
-class InvalidPropertyTypeException extends GeneratorException {
+public class InvalidPropertyTypeException extends GeneratorException {
 
   private InvalidPropertyTypeException(InvalidPropertyTypeExceptionBuilder builder) {
     super(
@@ -25,11 +25,11 @@ class InvalidPropertyTypeException extends GeneratorException {
       .toString();
   }
 
-  static InvalidPropertyTypeExceptionKeyBuilder builder() {
+  public static InvalidPropertyTypeExceptionKeyBuilder builder() {
     return new InvalidPropertyTypeExceptionBuilder();
   }
 
-  static class InvalidPropertyTypeExceptionBuilder
+  public static class InvalidPropertyTypeExceptionBuilder
     implements
       InvalidPropertyTypeExceptionKeyBuilder,
       InvalidPropertyTypeExceptionExpectedTypeBuilder,
@@ -60,11 +60,11 @@ class InvalidPropertyTypeException extends GeneratorException {
     }
   }
 
-  interface InvalidPropertyTypeExceptionKeyBuilder {
+  public interface InvalidPropertyTypeExceptionKeyBuilder {
     InvalidPropertyTypeExceptionExpectedTypeBuilder key(String key);
   }
 
-  interface InvalidPropertyTypeExceptionExpectedTypeBuilder {
+  public interface InvalidPropertyTypeExceptionExpectedTypeBuilder {
     InvalidPropertyTypeExceptionBuilder expectedType(Class<?> expectedType);
   }
 

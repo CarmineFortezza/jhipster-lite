@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import tech.jhipster.lite.module.application.JHipsterModulesApplicationService;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.JHipsterModuleSlug;
 import tech.jhipster.lite.module.domain.JHipsterModuleToApply;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleResource;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleResource;
 import tech.jhipster.lite.shared.projectfolder.domain.ProjectFolder;
 
 @RestController

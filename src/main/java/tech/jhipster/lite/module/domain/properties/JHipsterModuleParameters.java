@@ -5,16 +5,16 @@ import java.util.function.Predicate;
 import tech.jhipster.lite.shared.collection.domain.JHipsterCollections;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
-record JHipsterModuleParameters(Map<String, Object> parameters) {
+public record JHipsterModuleParameters(Map<String, Object> parameters) {
   public JHipsterModuleParameters(Map<String, Object> parameters) {
     this.parameters = JHipsterCollections.immutable(parameters);
   }
 
-  <T> T getOrDefault(String key, T defaultValue, Class<T> clazz) {
+  public <T> T getOrDefault(String key, T defaultValue, Class<T> clazz) {
     return getOrDefault(key, defaultValue, clazz, t -> false);
   }
 
-  <T> T getOrDefault(String key, T defaultValue, Class<T> clazz, Predicate<T> isEmpty) {
+  public <T> T getOrDefault(String key, T defaultValue, Class<T> clazz, Predicate<T> isEmpty) {
     Assert.notBlank("key", key);
 
     if (!parameters.containsKey(key)) {
@@ -30,7 +30,7 @@ record JHipsterModuleParameters(Map<String, Object> parameters) {
     return value;
   }
 
-  <T> T get(String key, Class<T> clazz) {
+  public <T> T get(String key, Class<T> clazz) {
     Assert.notBlank("key", key);
 
     Object property = parameters.get(key);

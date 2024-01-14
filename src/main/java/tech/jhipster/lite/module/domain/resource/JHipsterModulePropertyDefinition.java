@@ -1,7 +1,7 @@
 package tech.jhipster.lite.module.domain.resource;
 
 import java.util.Optional;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.properties.JHipsterPropertyDefaultValue;
 import tech.jhipster.lite.module.domain.properties.JHipsterPropertyDescription;
 import tech.jhipster.lite.module.domain.properties.JHipsterPropertyKey;

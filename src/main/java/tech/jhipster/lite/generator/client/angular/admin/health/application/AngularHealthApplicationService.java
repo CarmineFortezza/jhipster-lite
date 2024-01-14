@@ -3,7 +3,7 @@ package tech.jhipster.lite.generator.client.angular.admin.health.application;
 import org.springframework.stereotype.Service;
 import tech.jhipster.lite.generator.client.angular.admin.health.domain.AngularHealthModuleFactory;
 import tech.jhipster.lite.module.domain.JHipsterModule;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 
 @Service
 public class AngularHealthApplicationService {

@@ -15,7 +15,7 @@ import tech.jhipster.lite.module.domain.JHipsterModuleEvents;
 import tech.jhipster.lite.module.domain.JHipsterModuleSlug;
 import tech.jhipster.lite.module.domain.JHipsterModuleToApply;
 import tech.jhipster.lite.module.domain.ProjectFiles;
-import tech.jhipster.lite.module.domain.resource.JHipsterModulesResources;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModulesResources;
 import tech.jhipster.lite.module.infrastructure.secondary.git.GitTestUtil;
 import tech.jhipster.lite.module.infrastructure.secondary.javadependency.JavaDependenciesFixture;
 import tech.jhipster.lite.module.infrastructure.secondary.javadependency.JavaDependenciesReader;

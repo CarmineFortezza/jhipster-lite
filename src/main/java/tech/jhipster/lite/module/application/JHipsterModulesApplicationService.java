@@ -6,14 +6,14 @@ import tech.jhipster.lite.module.domain.GeneratedProjectRepository;
 import tech.jhipster.lite.module.domain.JHipsterModuleApplied;
 import tech.jhipster.lite.module.domain.JHipsterModuleEvents;
 import tech.jhipster.lite.module.domain.JHipsterModuleToApply;
-import tech.jhipster.lite.module.domain.JHipsterModulesApplyer;
-import tech.jhipster.lite.module.domain.JHipsterModulesRepository;
 import tech.jhipster.lite.module.domain.JHipsterModulesToApply;
 import tech.jhipster.lite.module.domain.git.GitRepository;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependenciesVersionsRepository;
 import tech.jhipster.lite.module.domain.javadependency.ProjectJavaDependenciesRepository;
 import tech.jhipster.lite.module.domain.landscape.JHipsterLandscape;
-import tech.jhipster.lite.module.domain.resource.JHipsterModulesResources;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModulesApplyer;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModulesRepository;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModulesResources;
 
 @Service
 public class JHipsterModulesApplicationService {

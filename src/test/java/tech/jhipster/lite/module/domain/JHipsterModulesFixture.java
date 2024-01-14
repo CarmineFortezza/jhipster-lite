@@ -31,7 +31,6 @@ import tech.jhipster.lite.module.domain.javaproperties.SpringProperty;
 import tech.jhipster.lite.module.domain.javaproperties.SpringPropertyType;
 import tech.jhipster.lite.module.domain.mavenplugin.MavenPlugin;
 import tech.jhipster.lite.module.domain.packagejson.VersionSource;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 
 public final class JHipsterModulesFixture {
 

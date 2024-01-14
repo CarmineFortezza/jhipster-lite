@@ -3,7 +3,7 @@ package tech.jhipster.lite.generator.client.react.security.jwt.application;
 import org.springframework.stereotype.Service;
 import tech.jhipster.lite.generator.client.react.security.jwt.domain.ReactJwtModuleFactory;
 import tech.jhipster.lite.module.domain.JHipsterModule;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 
 @Service
 public class ReactJwtApplicationService {

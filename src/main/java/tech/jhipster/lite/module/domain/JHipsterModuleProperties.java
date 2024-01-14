@@ -1,9 +1,9 @@
-package tech.jhipster.lite.module.domain.properties;
+package tech.jhipster.lite.module.domain;
 
 import java.time.Instant;
 import java.time.format.DateTimeParseException;
 import java.util.Map;
-import tech.jhipster.lite.module.domain.Indentation;
+import tech.jhipster.lite.module.domain.properties.*;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class JHipsterModuleProperties {

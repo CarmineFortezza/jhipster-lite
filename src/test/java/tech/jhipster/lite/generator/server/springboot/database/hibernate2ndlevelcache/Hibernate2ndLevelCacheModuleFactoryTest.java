@@ -8,8 +8,8 @@ import tech.jhipster.lite.TestFileUtils;
 import tech.jhipster.lite.UnitTest;
 import tech.jhipster.lite.generator.server.springboot.database.hibernate2ndlevelcache.domain.Hibernate2ndLevelCacheModuleFactory;
 import tech.jhipster.lite.module.domain.JHipsterModule;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.JHipsterModulesFixture;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 
 @UnitTest
 class Hibernate2ndLevelCacheModuleFactoryTest {

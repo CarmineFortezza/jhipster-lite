@@ -3,8 +3,8 @@ package tech.jhipster.lite.generator.server.springboot.database.mysql.applicatio
 import org.springframework.stereotype.Service;
 import tech.jhipster.lite.generator.server.springboot.database.mysql.domain.MySQLModuleFactory;
 import tech.jhipster.lite.module.domain.JHipsterModule;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.docker.DockerImages;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 
 @Service
 public class MySQLApplicationService {

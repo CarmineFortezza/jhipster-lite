@@ -7,9 +7,9 @@ import static tech.jhipster.lite.module.domain.resource.JHLiteModuleSlug.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import tech.jhipster.lite.generator.server.springboot.mvc.security.oauth2.core.application.OAuth2SecurityApplicationService;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleOrganization;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleOrganization;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleResource;
 import tech.jhipster.lite.module.domain.resource.JHipsterModulePropertiesDefinition;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleResource;
 
 @Configuration
 class OAuth2ModuleConfiguration {

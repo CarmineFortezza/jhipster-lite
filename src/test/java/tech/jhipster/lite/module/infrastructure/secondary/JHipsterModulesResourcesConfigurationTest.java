@@ -11,7 +11,7 @@ import tech.jhipster.lite.Logs;
 import tech.jhipster.lite.LogsSpy;
 import tech.jhipster.lite.LogsSpyExtension;
 import tech.jhipster.lite.UnitTest;
-import tech.jhipster.lite.module.domain.resource.JHipsterModulesResources;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModulesResources;
 
 @UnitTest
 @ExtendWith(LogsSpyExtension.class)

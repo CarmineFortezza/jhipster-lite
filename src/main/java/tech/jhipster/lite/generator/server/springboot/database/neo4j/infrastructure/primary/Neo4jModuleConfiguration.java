@@ -5,9 +5,9 @@ import static tech.jhipster.lite.module.domain.resource.JHLiteModuleSlug.NEO4J;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import tech.jhipster.lite.generator.server.springboot.database.neo4j.application.Neo4jApplicationService;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleOrganization;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleOrganization;
+import tech.jhipster.lite.module.domain.landscape.JHipsterModuleResource;
 import tech.jhipster.lite.module.domain.resource.JHipsterModulePropertiesDefinition;
-import tech.jhipster.lite.module.domain.resource.JHipsterModuleResource;
 
 @Configuration
 class Neo4jModuleConfiguration {

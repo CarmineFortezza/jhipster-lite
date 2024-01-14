@@ -4,6 +4,7 @@ import static tech.jhipster.lite.generator.server.springboot.cucumbercommon.doma
 import static tech.jhipster.lite.module.domain.JHipsterModule.*;
 
 import tech.jhipster.lite.module.domain.JHipsterModule;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.JHipsterProjectFilePath;
 import tech.jhipster.lite.module.domain.file.JHipsterDestination;
 import tech.jhipster.lite.module.domain.file.JHipsterSource;
@@ -12,7 +13,6 @@ import tech.jhipster.lite.module.domain.javadependency.JavaDependency.JavaDepend
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyScope;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyType;
 import tech.jhipster.lite.module.domain.javaproperties.PropertyKey;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class CustomJHLiteModuleFactory {

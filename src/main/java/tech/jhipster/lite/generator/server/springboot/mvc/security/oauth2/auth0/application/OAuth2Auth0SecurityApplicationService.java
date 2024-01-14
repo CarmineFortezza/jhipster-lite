@@ -3,7 +3,7 @@ package tech.jhipster.lite.generator.server.springboot.mvc.security.oauth2.auth0
 import org.springframework.stereotype.Service;
 import tech.jhipster.lite.generator.server.springboot.mvc.security.oauth2.auth0.domain.OAuth2Auth0ModuleFactory;
 import tech.jhipster.lite.module.domain.JHipsterModule;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 
 @Service
 public class OAuth2Auth0SecurityApplicationService {

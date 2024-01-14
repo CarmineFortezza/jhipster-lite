@@ -3,11 +3,11 @@ package tech.jhipster.lite.generator.init.domain;
 import static tech.jhipster.lite.module.domain.JHipsterModule.*;
 
 import tech.jhipster.lite.module.domain.JHipsterModule;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.file.JHipsterDestination;
 import tech.jhipster.lite.module.domain.file.JHipsterSource;
 import tech.jhipster.lite.module.domain.npm.NpmVersionSource;
 import tech.jhipster.lite.module.domain.npm.NpmVersions;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class InitModuleFactory {

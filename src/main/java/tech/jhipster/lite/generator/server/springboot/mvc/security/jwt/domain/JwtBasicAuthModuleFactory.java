@@ -3,10 +3,10 @@ package tech.jhipster.lite.generator.server.springboot.mvc.security.jwt.domain;
 import static tech.jhipster.lite.module.domain.JHipsterModule.*;
 
 import tech.jhipster.lite.module.domain.JHipsterModule;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.file.JHipsterDestination;
 import tech.jhipster.lite.module.domain.file.JHipsterSource;
 import tech.jhipster.lite.module.domain.javaproperties.JHipsterModuleSpringProperties.JHipsterModuleSpringPropertiesBuilder;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class JwtBasicAuthModuleFactory {

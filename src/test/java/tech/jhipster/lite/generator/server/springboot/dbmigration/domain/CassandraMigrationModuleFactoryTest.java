@@ -12,10 +12,10 @@ import tech.jhipster.lite.TestFileUtils;
 import tech.jhipster.lite.UnitTest;
 import tech.jhipster.lite.generator.server.springboot.dbmigration.cassandra.domain.CassandraMigrationModuleFactory;
 import tech.jhipster.lite.module.domain.JHipsterModule;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.JHipsterModulesFixture;
 import tech.jhipster.lite.module.domain.docker.DockerImageVersion;
 import tech.jhipster.lite.module.domain.docker.DockerImages;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 
 @UnitTest
 @ExtendWith(MockitoExtension.class)

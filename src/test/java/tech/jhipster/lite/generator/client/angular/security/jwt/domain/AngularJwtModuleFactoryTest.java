@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Test;
 import tech.jhipster.lite.TestFileUtils;
 import tech.jhipster.lite.UnitTest;
 import tech.jhipster.lite.module.domain.JHipsterModule;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.JHipsterModulesFixture;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 
 @UnitTest
 class AngularJwtModuleFactoryTest {

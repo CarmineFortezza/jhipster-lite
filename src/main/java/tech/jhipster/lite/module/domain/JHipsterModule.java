@@ -76,7 +76,6 @@ import tech.jhipster.lite.module.domain.packagejson.ScriptCommand;
 import tech.jhipster.lite.module.domain.packagejson.ScriptKey;
 import tech.jhipster.lite.module.domain.postaction.JHipsterModulePostActions;
 import tech.jhipster.lite.module.domain.postaction.JHipsterModulePostActions.JHipsterModulePostActionsBuilder;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
 import tech.jhipster.lite.module.domain.replacement.FileStartReplacer;
 import tech.jhipster.lite.module.domain.replacement.JHipsterModuleMandatoryReplacementsFactory;

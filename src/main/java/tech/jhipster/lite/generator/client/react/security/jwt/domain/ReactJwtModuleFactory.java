@@ -4,9 +4,9 @@ import static tech.jhipster.lite.module.domain.JHipsterModule.*;
 import static tech.jhipster.lite.module.domain.packagejson.VersionSource.*;
 
 import tech.jhipster.lite.module.domain.JHipsterModule;
+import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.file.JHipsterDestination;
 import tech.jhipster.lite.module.domain.file.JHipsterSource;
-import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 import tech.jhipster.lite.module.domain.replacement.RegexNeedleBeforeReplacer;
 import tech.jhipster.lite.shared.error.domain.Assert;
 

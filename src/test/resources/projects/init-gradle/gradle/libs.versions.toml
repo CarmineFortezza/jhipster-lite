@@ -1,0 +1,8 @@
+[versions]
+jacoco = "0.8.8"
+
+[libraries]
+
+[bundles]
+
+[plugins]

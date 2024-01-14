@@ -1,0 +1,20 @@
+# Prettier configuration
+
+printWidth: 140
+singleQuote: true
+tabWidth: 2
+useTabs: false
+
+plugins:
+  - '@prettier/plugin-xml'
+  - prettier-plugin-java
+  - prettier-plugin-gherkin
+
+# js and ts rules:
+arrowParens: avoid
+
+# jsx and tsx rules:
+bracketSameLine: false
+
+# xml rules:
+xmlWhitespaceSensitivity: ignore

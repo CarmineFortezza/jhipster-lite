@@ -1,0 +1,14 @@
+[versions]
+checkstyle = "10.12.7"
+jib = "3.4.0"
+
+[libraries]
+[libraries.checkstyle]
+group = "com.puppycrawl.tools"
+name = "checkstyle"
+version.ref = "checkstyle"
+
+[plugins]
+[plugins.jib]
+id = "com.google.cloud.tools.jib"
+version.ref = "jib"

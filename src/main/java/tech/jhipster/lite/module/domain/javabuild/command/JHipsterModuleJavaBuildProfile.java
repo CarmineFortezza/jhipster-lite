@@ -1,4 +1,4 @@
-package tech.jhipster.lite.module.domain.javabuildprofile;
+package tech.jhipster.lite.module.domain.javabuild.command;
 
 import java.util.Map;
 import java.util.Optional;
@@ -6,8 +6,10 @@ import tech.jhipster.lite.module.domain.buildproperties.JHipsterModuleBuildPrope
 import tech.jhipster.lite.module.domain.buildproperties.JHipsterModuleBuildProperties.JHipsterModuleBuildPropertiesBuilder;
 import tech.jhipster.lite.module.domain.buildproperties.PropertyKey;
 import tech.jhipster.lite.module.domain.buildproperties.PropertyValue;
+import tech.jhipster.lite.module.domain.javabuild.command.JHipsterModuleJavaBuildProfiles.JHipsterModuleJavaBuildProfilesBuilder;
+import tech.jhipster.lite.module.domain.javabuildprofile.BuildProfileActivation;
 import tech.jhipster.lite.module.domain.javabuildprofile.BuildProfileActivation.BuildProfileActivationBuilder;
-import tech.jhipster.lite.module.domain.javabuildprofile.JHipsterModuleJavaBuildProfiles.JHipsterModuleJavaBuildProfilesBuilder;
+import tech.jhipster.lite.module.domain.javabuildprofile.BuildProfileId;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class JHipsterModuleJavaBuildProfile {

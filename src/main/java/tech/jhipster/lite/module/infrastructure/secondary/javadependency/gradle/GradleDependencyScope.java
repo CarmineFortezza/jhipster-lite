@@ -1,6 +1,6 @@
 package tech.jhipster.lite.module.infrastructure.secondary.javadependency.gradle;
 
-enum GradleDependencyScope {
+public enum GradleDependencyScope {
   API("api"),
   IMPLEMENTATION("implementation"),
   COMPILE_ONLY("compileOnly"),

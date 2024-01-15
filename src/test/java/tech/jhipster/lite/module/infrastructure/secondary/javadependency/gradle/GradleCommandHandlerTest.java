@@ -29,6 +29,7 @@ import tech.jhipster.lite.module.domain.javabuild.command.JavaDependency;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyScope;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyVersion;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
+import tech.jhipster.lite.module.infrastructure.secondary.GradleCommandHandler;
 
 @UnitTest
 class GradleCommandHandlerTest {

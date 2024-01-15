@@ -1,4 +1,4 @@
-package tech.jhipster.lite.project.domain.download;
+package tech.jhipster.lite.project.domain;
 
 import tech.jhipster.lite.shared.error.domain.GeneratorException;
 

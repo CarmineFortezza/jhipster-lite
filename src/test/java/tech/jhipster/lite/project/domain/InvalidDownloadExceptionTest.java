@@ -1,10 +1,10 @@
-package tech.jhipster.lite.project.domain.download;
-
-import static org.assertj.core.api.Assertions.*;
+package tech.jhipster.lite.project.domain;
 
 import org.junit.jupiter.api.Test;
 import tech.jhipster.lite.UnitTest;
 import tech.jhipster.lite.shared.error.domain.ErrorStatus;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 @UnitTest
 class InvalidDownloadExceptionTest {

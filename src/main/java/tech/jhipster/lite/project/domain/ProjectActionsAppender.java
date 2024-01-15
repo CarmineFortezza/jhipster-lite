@@ -1,6 +1,5 @@
-package tech.jhipster.lite.project.domain.history;
+package tech.jhipster.lite.project.domain;
 
-import tech.jhipster.lite.project.domain.ProjectsRepository;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class ProjectActionsAppender {

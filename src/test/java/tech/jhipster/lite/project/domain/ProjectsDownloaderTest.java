@@ -1,19 +1,20 @@
-package tech.jhipster.lite.project.domain.download;
+package tech.jhipster.lite.project.domain;
 
-import static org.assertj.core.api.Assertions.*;
-import static org.mockito.Mockito.*;
-
-import java.util.Optional;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import tech.jhipster.lite.UnitTest;
-import tech.jhipster.lite.project.domain.ProjectPath;
-import tech.jhipster.lite.project.domain.ProjectsRepository;
-import tech.jhipster.lite.project.domain.UnknownProjectException;
+import tech.jhipster.lite.project.domain.download.Project;
+import tech.jhipster.lite.project.domain.download.ProjectName;
 import tech.jhipster.lite.shared.projectfolder.domain.ProjectFolder;
+
+import java.util.Optional;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.mockito.Mockito.*;
 
 @UnitTest
 @ExtendWith(MockitoExtension.class)

@@ -1,6 +1,6 @@
-package tech.jhipster.lite.project.domain.history;
+package tech.jhipster.lite.project.domain;
 
-import tech.jhipster.lite.project.domain.ProjectPath;
+import tech.jhipster.lite.project.domain.history.ProjectAction;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public record ProjectActionToAppend(ProjectPath path, ProjectAction action) {

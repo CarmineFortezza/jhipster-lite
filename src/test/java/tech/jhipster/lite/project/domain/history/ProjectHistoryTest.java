@@ -1,13 +1,15 @@
 package tech.jhipster.lite.project.domain.history;
 
-import static org.assertj.core.api.Assertions.*;
-import static tech.jhipster.lite.project.domain.history.ProjectHistoryFixture.*;
+import org.junit.jupiter.api.Test;
+import tech.jhipster.lite.UnitTest;
+import tech.jhipster.lite.project.domain.ProjectHistory;
 
 import java.time.Instant;
 import java.util.List;
 import java.util.Map;
-import org.junit.jupiter.api.Test;
-import tech.jhipster.lite.UnitTest;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static tech.jhipster.lite.project.domain.history.ProjectHistoryFixture.*;
 
 @UnitTest
 class ProjectHistoryTest {

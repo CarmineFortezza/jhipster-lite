@@ -3,9 +3,9 @@ package tech.jhipster.lite.project.infrastructure.primary;
 import org.springframework.stereotype.Service;
 import tech.jhipster.lite.module.domain.JHipsterModuleApplied;
 import tech.jhipster.lite.project.application.ProjectsApplicationService;
+import tech.jhipster.lite.project.domain.ProjectActionToAppend;
 import tech.jhipster.lite.project.domain.ProjectPath;
 import tech.jhipster.lite.project.domain.history.ProjectAction;
-import tech.jhipster.lite.project.domain.history.ProjectActionToAppend;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 @Service

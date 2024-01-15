@@ -1,9 +1,10 @@
 package tech.jhipster.lite.project.infrastructure.secondary;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import java.util.Collection;
+import tech.jhipster.lite.project.domain.ProjectHistory;
 import tech.jhipster.lite.project.domain.ProjectPath;
-import tech.jhipster.lite.project.domain.history.ProjectHistory;
+
+import java.util.Collection;
 
 class PersistedProjectHistory {
 

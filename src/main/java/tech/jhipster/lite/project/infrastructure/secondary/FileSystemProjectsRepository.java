@@ -2,18 +2,19 @@ package tech.jhipster.lite.project.infrastructure.secondary;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
+import org.springframework.stereotype.Repository;
+import tech.jhipster.lite.project.domain.ProjectHistory;
+import tech.jhipster.lite.project.domain.ProjectPath;
+import tech.jhipster.lite.project.domain.ProjectsRepository;
+import tech.jhipster.lite.project.domain.download.Project;
+import tech.jhipster.lite.shared.error.domain.Assert;
+import tech.jhipster.lite.shared.error.domain.GeneratorException;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Optional;
-import org.springframework.stereotype.Repository;
-import tech.jhipster.lite.project.domain.ProjectPath;
-import tech.jhipster.lite.project.domain.ProjectsRepository;
-import tech.jhipster.lite.project.domain.download.Project;
-import tech.jhipster.lite.project.domain.history.ProjectHistory;
-import tech.jhipster.lite.shared.error.domain.Assert;
-import tech.jhipster.lite.shared.error.domain.GeneratorException;
 
 @Repository
 class FileSystemProjectsRepository implements ProjectsRepository {

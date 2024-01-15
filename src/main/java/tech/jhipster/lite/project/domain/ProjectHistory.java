@@ -1,12 +1,14 @@
-package tech.jhipster.lite.project.domain.history;
+package tech.jhipster.lite.project.domain;
+
+import tech.jhipster.lite.project.domain.history.ModuleParameters;
+import tech.jhipster.lite.project.domain.history.ProjectAction;
+import tech.jhipster.lite.shared.collection.domain.JHipsterCollections;
+import tech.jhipster.lite.shared.error.domain.Assert;
 
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Stream;
-import tech.jhipster.lite.project.domain.ProjectPath;
-import tech.jhipster.lite.shared.collection.domain.JHipsterCollections;
-import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class ProjectHistory {
 

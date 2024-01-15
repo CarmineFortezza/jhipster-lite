@@ -1,4 +1,4 @@
-package tech.jhipster.lite.module.domain.javadependency;
+package tech.jhipster.lite.module.domain.javabuild.command;
 
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
 

@@ -1,4 +1,4 @@
-package tech.jhipster.lite.module.domain.javadependency;
+package tech.jhipster.lite.module.domain.javabuild.command;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -11,8 +11,7 @@ import tech.jhipster.lite.module.domain.javabuild.ArtifactId;
 import tech.jhipster.lite.module.domain.javabuild.DependencySlug;
 import tech.jhipster.lite.module.domain.javabuild.GroupId;
 import tech.jhipster.lite.module.domain.javabuild.VersionSlug;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommand;
-import tech.jhipster.lite.module.domain.javabuild.command.SetVersion;
+import tech.jhipster.lite.module.domain.javadependency.*;
 import tech.jhipster.lite.shared.collection.domain.JHipsterCollections;
 import tech.jhipster.lite.shared.error.domain.Assert;
 import tech.jhipster.lite.shared.generation.domain.ExcludeFromGeneratedCodeCoverage;
@@ -49,7 +48,10 @@ public class JavaDependency {
     return new JavaDependencyBuilder();
   }
 
-  Collection<JavaBuildCommand> versionCommands(JavaDependenciesVersions currentVersions, ProjectJavaDependencies projectDependencies) {
+  public Collection<JavaBuildCommand> versionCommands(
+    JavaDependenciesVersions currentVersions,
+    ProjectJavaDependencies projectDependencies
+  ) {
     return version().flatMap(toVersion(currentVersions, projectDependencies)).map(toSetVersionCommand()).map(List::of).orElse(List.of());
   }
 
@@ -78,7 +80,7 @@ public class JavaDependency {
     return SetVersion::new;
   }
 
-  Collection<JavaBuildCommand> dependencyCommands(DependenciesCommandsFactory commands, Optional<JavaDependency> projectDependency) {
+  public Collection<JavaBuildCommand> dependencyCommands(DependenciesCommandsFactory commands, Optional<JavaDependency> projectDependency) {
     return projectDependency.map(toDependenciesCommands(commands)).orElseGet(() -> List.of(commands.addDependency(this)));
   }
 

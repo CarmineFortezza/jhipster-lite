@@ -1,9 +1,22 @@
 package tech.jhipster.lite.module.domain;
 
+import static tech.jhipster.lite.module.domain.replacement.ReplacementCondition.always;
+import static tech.jhipster.lite.module.domain.replacement.ReplacementCondition.notContainingReplacement;
+
+import java.nio.file.Paths;
+import java.util.EnumMap;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.function.Function;
+import java.util.regex.Pattern;
+import java.util.stream.Stream;
 import org.apache.commons.lang3.StringUtils;
 import tech.jhipster.lite.module.domain.JHipsterModuleContext.JHipsterModuleContextBuilder;
 import tech.jhipster.lite.module.domain.JHipsterModuleFiles.JHipsterModuleFilesBuilder;
 import tech.jhipster.lite.module.domain.JHipsterModuleGradlePlugin.JHipsterModuleGradlePluginBuilder;
+import tech.jhipster.lite.module.domain.JHipsterModuleJavaDependencies.JHipsterModuleJavaDependenciesBuilder;
 import tech.jhipster.lite.module.domain.JHipsterModuleMandatoryReplacementsFactory.JHipsterModuleMandatoryReplacementsFactoryBuilder;
 import tech.jhipster.lite.module.domain.JHipsterModuleOptionalReplacementsFactory.JHipsterModuleOptionalReplacementsFactoryBuilder;
 import tech.jhipster.lite.module.domain.JHipsterModulePackageJson.JHipsterModulePackageJsonBuilder;
@@ -26,16 +39,14 @@ import tech.jhipster.lite.module.domain.javabuild.MavenBuildExtension.MavenBuild
 import tech.jhipster.lite.module.domain.javabuild.VersionSlug;
 import tech.jhipster.lite.module.domain.javabuild.command.JHipsterModuleMavenBuildExtensions;
 import tech.jhipster.lite.module.domain.javabuild.command.JHipsterModuleMavenBuildExtensions.JHipsterModuleMavenBuildExtensionsBuilder;
+import tech.jhipster.lite.module.domain.javabuild.command.JavaDependency;
+import tech.jhipster.lite.module.domain.javabuild.command.JavaDependency.JavaDependencyGroupIdBuilder;
 import tech.jhipster.lite.module.domain.javabuildprofile.BuildProfileActivation;
 import tech.jhipster.lite.module.domain.javabuildprofile.BuildProfileActivation.BuildProfileActivationBuilder;
 import tech.jhipster.lite.module.domain.javabuildprofile.BuildProfileId;
 import tech.jhipster.lite.module.domain.javabuildprofile.JHipsterModuleJavaBuildProfiles;
 import tech.jhipster.lite.module.domain.javabuildprofile.JHipsterModuleJavaBuildProfiles.JHipsterModuleJavaBuildProfilesBuilder;
 import tech.jhipster.lite.module.domain.javadependency.DependencyId;
-import tech.jhipster.lite.module.domain.javadependency.JHipsterModuleJavaDependencies;
-import tech.jhipster.lite.module.domain.javadependency.JHipsterModuleJavaDependencies.JHipsterModuleJavaDependenciesBuilder;
-import tech.jhipster.lite.module.domain.javadependency.JavaDependency;
-import tech.jhipster.lite.module.domain.javadependency.JavaDependency.JavaDependencyGroupIdBuilder;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyVersion;
 import tech.jhipster.lite.module.domain.javaproperties.*;
 import tech.jhipster.lite.module.domain.mavenplugin.JHipsterModuleMavenPlugins;
@@ -50,19 +61,6 @@ import tech.jhipster.lite.module.domain.packagejson.ScriptKey;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
 import tech.jhipster.lite.module.domain.replacement.*;
 import tech.jhipster.lite.shared.error.domain.Assert;
-
-import java.nio.file.Paths;
-import java.util.EnumMap;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import java.util.function.Function;
-import java.util.regex.Pattern;
-import java.util.stream.Stream;
-
-import static tech.jhipster.lite.module.domain.replacement.ReplacementCondition.always;
-import static tech.jhipster.lite.module.domain.replacement.ReplacementCondition.notContainingReplacement;
 
 @SuppressWarnings("java:S6539")
 public class JHipsterModule {

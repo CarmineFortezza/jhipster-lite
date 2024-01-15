@@ -16,7 +16,7 @@ public enum JavaDependencyScope {
     this.priority = priority;
   }
 
-  static JavaDependencyScope from(JavaDependencyScope scope) {
+  public static JavaDependencyScope from(JavaDependencyScope scope) {
     if (scope == null) {
       return COMPILE;
     }
@@ -24,7 +24,7 @@ public enum JavaDependencyScope {
     return scope;
   }
 
-  JavaDependencyScope merge(JavaDependencyScope other) {
+  public JavaDependencyScope merge(JavaDependencyScope other) {
     Assert.notNull("other", other);
 
     if (other.priority > priority) {

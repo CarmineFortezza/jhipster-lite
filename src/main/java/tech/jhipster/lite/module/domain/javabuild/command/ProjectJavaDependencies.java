@@ -1,7 +1,10 @@
-package tech.jhipster.lite.module.domain.javadependency;
+package tech.jhipster.lite.module.domain.javabuild.command;
 
 import java.util.Optional;
 import tech.jhipster.lite.module.domain.javabuild.VersionSlug;
+import tech.jhipster.lite.module.domain.javadependency.DependencyId;
+import tech.jhipster.lite.module.domain.javadependency.JavaDependencyVersion;
+import tech.jhipster.lite.module.domain.javadependency.ProjectJavaDependenciesVersions;
 
 public class ProjectJavaDependencies {
 

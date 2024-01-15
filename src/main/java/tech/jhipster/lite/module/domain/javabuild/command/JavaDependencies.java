@@ -1,10 +1,11 @@
-package tech.jhipster.lite.module.domain.javadependency;
+package tech.jhipster.lite.module.domain.javabuild.command;
 
 import java.util.Collection;
 import java.util.Map;
 import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import tech.jhipster.lite.module.domain.javadependency.DependencyId;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class JavaDependencies {

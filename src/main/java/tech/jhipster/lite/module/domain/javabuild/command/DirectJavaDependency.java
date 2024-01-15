@@ -1,11 +1,10 @@
-package tech.jhipster.lite.module.domain.javadependency;
+package tech.jhipster.lite.module.domain.javabuild.command;
 
 import java.util.Collection;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommand;
 
 public class DirectJavaDependency extends JavaDependencyCommandsCreator {
 
-  DirectJavaDependency(JavaDependency dependency) {
+  public DirectJavaDependency(JavaDependency dependency) {
     super(dependency);
   }
 

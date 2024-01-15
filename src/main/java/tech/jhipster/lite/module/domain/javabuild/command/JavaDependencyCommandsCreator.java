@@ -1,9 +1,8 @@
-package tech.jhipster.lite.module.domain.javadependency;
+package tech.jhipster.lite.module.domain.javabuild.command;
 
 import java.util.Collection;
 import java.util.stream.Stream;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommand;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommands;
+import tech.jhipster.lite.module.domain.javadependency.JavaDependenciesVersions;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 abstract class JavaDependencyCommandsCreator {
@@ -16,7 +15,7 @@ abstract class JavaDependencyCommandsCreator {
     this.dependency = dependency;
   }
 
-  JavaBuildCommands changeCommands(JavaDependenciesVersions currentVersions, ProjectJavaDependencies projectDependencies) {
+  public JavaBuildCommands changeCommands(JavaDependenciesVersions currentVersions, ProjectJavaDependencies projectDependencies) {
     Assert.notNull("currentVersion", currentVersions);
     Assert.notNull("projectDependencies", projectDependencies);
 

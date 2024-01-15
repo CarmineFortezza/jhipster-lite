@@ -4,7 +4,6 @@ import tech.jhipster.lite.project.domain.ProjectPath;
 import tech.jhipster.lite.project.domain.UnknownProjectException;
 import tech.jhipster.lite.project.domain.download.InvalidDownloadException;
 import tech.jhipster.lite.project.domain.download.Project;
-import tech.jhipster.lite.project.domain.history.ProjectsRepository;
 import tech.jhipster.lite.shared.error.domain.Assert;
 import tech.jhipster.lite.shared.projectfolder.domain.ProjectFolder;
 

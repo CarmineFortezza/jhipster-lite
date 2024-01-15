@@ -2,8 +2,8 @@ package tech.jhipster.lite.module.domain.javadependency;
 
 import java.util.Collection;
 import java.util.stream.Stream;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommand;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommands;
+import tech.jhipster.lite.module.domain.JavaBuildCommand;
+import tech.jhipster.lite.module.domain.JavaBuildCommands;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 abstract class JavaDependencyCommandsCreator {

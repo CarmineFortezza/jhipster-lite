@@ -5,9 +5,10 @@ import static tech.jhipster.lite.module.domain.JHipsterModulesFixture.*;
 
 import org.junit.jupiter.api.Test;
 import tech.jhipster.lite.UnitTest;
-import tech.jhipster.lite.module.domain.javabuild.command.AddDirectMavenPlugin;
-import tech.jhipster.lite.module.domain.javabuild.command.AddMavenPluginManagement;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommands;
+import tech.jhipster.lite.module.domain.JHipsterModuleMavenPlugins;
+import tech.jhipster.lite.module.domain.AddDirectMavenPlugin;
+import tech.jhipster.lite.module.domain.AddMavenPluginManagement;
+import tech.jhipster.lite.module.domain.JavaBuildCommands;
 
 @UnitTest
 class JHipsterModuleMavenPluginsTest {

@@ -1,8 +1,8 @@
-package tech.jhipster.lite.module.domain.javabuild.command;
+package tech.jhipster.lite.module.domain;
 
 import java.util.Optional;
+
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyVersion;
-import tech.jhipster.lite.module.domain.mavenplugin.MavenPlugin;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public final class AddDirectMavenPlugin implements JavaBuildCommand, AddMavenPlugin {

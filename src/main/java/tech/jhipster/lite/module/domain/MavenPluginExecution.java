@@ -1,4 +1,4 @@
-package tech.jhipster.lite.module.domain.mavenplugin;
+package tech.jhipster.lite.module.domain;
 
 import java.util.Collection;
 import java.util.List;
@@ -6,6 +6,10 @@ import java.util.Optional;
 import java.util.stream.Stream;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import tech.jhipster.lite.module.domain.mavenplugin.MavenBuildPhase;
+import tech.jhipster.lite.module.domain.mavenplugin.MavenPluginConfiguration;
+import tech.jhipster.lite.module.domain.mavenplugin.MavenPluginExecutionGoal;
+import tech.jhipster.lite.module.domain.mavenplugin.MavenPluginExecutionId;
 import tech.jhipster.lite.shared.collection.domain.JHipsterCollections;
 import tech.jhipster.lite.shared.error.domain.Assert;
 import tech.jhipster.lite.shared.generation.domain.ExcludeFromGeneratedCodeCoverage;

@@ -1,7 +1,7 @@
 package tech.jhipster.lite.module.domain.javadependency;
 
 import java.util.Collection;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommand;
+import tech.jhipster.lite.module.domain.JavaBuildCommand;
 
 public class JavaDependencyManagement extends JavaDependencyCommandsCreator {
 

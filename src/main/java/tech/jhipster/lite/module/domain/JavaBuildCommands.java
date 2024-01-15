@@ -1,4 +1,4 @@
-package tech.jhipster.lite.module.domain.javabuild.command;
+package tech.jhipster.lite.module.domain;
 
 import java.util.ArrayList;
 import java.util.Collection;

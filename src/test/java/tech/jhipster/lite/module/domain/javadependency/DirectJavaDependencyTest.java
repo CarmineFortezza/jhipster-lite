@@ -7,10 +7,10 @@ import static tech.jhipster.lite.module.domain.JHipsterModulesFixture.*;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 import tech.jhipster.lite.UnitTest;
-import tech.jhipster.lite.module.domain.javabuild.command.AddDirectJavaDependency;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommands;
-import tech.jhipster.lite.module.domain.javabuild.command.RemoveDirectJavaDependency;
-import tech.jhipster.lite.module.domain.javabuild.command.SetVersion;
+import tech.jhipster.lite.module.domain.AddDirectJavaDependency;
+import tech.jhipster.lite.module.domain.JavaBuildCommands;
+import tech.jhipster.lite.module.domain.RemoveDirectJavaDependency;
+import tech.jhipster.lite.module.domain.SetVersion;
 
 @UnitTest
 class DirectJavaDependencyTest {

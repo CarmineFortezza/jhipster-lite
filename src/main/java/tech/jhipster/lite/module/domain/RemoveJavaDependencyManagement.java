@@ -1,4 +1,4 @@
-package tech.jhipster.lite.module.domain.javabuild.command;
+package tech.jhipster.lite.module.domain;
 
 import tech.jhipster.lite.module.domain.javadependency.DependencyId;
 import tech.jhipster.lite.shared.error.domain.Assert;

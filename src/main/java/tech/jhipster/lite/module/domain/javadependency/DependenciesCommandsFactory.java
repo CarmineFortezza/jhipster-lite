@@ -1,11 +1,11 @@
 package tech.jhipster.lite.module.domain.javadependency;
 
 import java.util.function.Function;
-import tech.jhipster.lite.module.domain.javabuild.command.AddDirectJavaDependency;
-import tech.jhipster.lite.module.domain.javabuild.command.AddJavaDependencyManagement;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommand;
-import tech.jhipster.lite.module.domain.javabuild.command.RemoveDirectJavaDependency;
-import tech.jhipster.lite.module.domain.javabuild.command.RemoveJavaDependencyManagement;
+import tech.jhipster.lite.module.domain.AddDirectJavaDependency;
+import tech.jhipster.lite.module.domain.AddJavaDependencyManagement;
+import tech.jhipster.lite.module.domain.JavaBuildCommand;
+import tech.jhipster.lite.module.domain.RemoveDirectJavaDependency;
+import tech.jhipster.lite.module.domain.RemoveJavaDependencyManagement;
 
 class DependenciesCommandsFactory {
 

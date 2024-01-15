@@ -1,4 +1,4 @@
-package tech.jhipster.lite.module.domain.mavenplugin;
+package tech.jhipster.lite.module.domain;
 
 import static java.util.function.Predicate.not;
 
@@ -12,7 +12,9 @@ import tech.jhipster.lite.module.domain.javabuild.ArtifactId;
 import tech.jhipster.lite.module.domain.javabuild.GroupId;
 import tech.jhipster.lite.module.domain.javabuild.VersionSlug;
 import tech.jhipster.lite.module.domain.javadependency.DependencyId;
-import tech.jhipster.lite.module.domain.mavenplugin.MavenPluginExecution.MavenPluginExecutionOptionalBuilder;
+import tech.jhipster.lite.module.domain.MavenPluginExecution.MavenPluginExecutionOptionalBuilder;
+import tech.jhipster.lite.module.domain.mavenplugin.MavenPluginConfiguration;
+import tech.jhipster.lite.module.domain.mavenplugin.MavenPluginExecutions;
 import tech.jhipster.lite.shared.generation.domain.ExcludeFromGeneratedCodeCoverage;
 
 public class MavenPlugin {

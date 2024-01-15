@@ -1,12 +1,12 @@
-package tech.jhipster.lite.module.domain.javabuild.command;
+package tech.jhipster.lite.module.domain;
 
-import java.util.Optional;
 import tech.jhipster.lite.module.domain.javabuild.VersionSlug;
 import tech.jhipster.lite.module.domain.javadependency.DependencyId;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyVersion;
-import tech.jhipster.lite.module.domain.mavenplugin.MavenPlugin;
 import tech.jhipster.lite.module.domain.mavenplugin.MavenPluginConfiguration;
 import tech.jhipster.lite.module.domain.mavenplugin.MavenPluginExecutions;
+
+import java.util.Optional;
 
 public interface AddMavenPlugin {
   MavenPlugin plugin();

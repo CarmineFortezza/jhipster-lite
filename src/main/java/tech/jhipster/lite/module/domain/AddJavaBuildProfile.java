@@ -1,9 +1,10 @@
-package tech.jhipster.lite.module.domain.javabuild.command;
+package tech.jhipster.lite.module.domain;
 
-import java.util.Optional;
 import tech.jhipster.lite.module.domain.javabuildprofile.BuildProfileActivation;
 import tech.jhipster.lite.module.domain.javabuildprofile.BuildProfileId;
 import tech.jhipster.lite.shared.error.domain.Assert;
+
+import java.util.Optional;
 
 public record AddJavaBuildProfile(BuildProfileId buildProfileId, Optional<BuildProfileActivation> activation) implements JavaBuildCommand {
   public AddJavaBuildProfile {

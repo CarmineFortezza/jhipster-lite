@@ -17,12 +17,12 @@ import tech.jhipster.lite.LogsSpy;
 import tech.jhipster.lite.LogsSpyExtension;
 import tech.jhipster.lite.TestFileUtils;
 import tech.jhipster.lite.UnitTest;
+import tech.jhipster.lite.module.domain.JHipsterFileToMove;
+import tech.jhipster.lite.module.domain.JHipsterFilesToDelete;
+import tech.jhipster.lite.module.domain.JHipsterFilesToMove;
 import tech.jhipster.lite.module.domain.JHipsterModule;
 import tech.jhipster.lite.module.domain.JHipsterModulesFixture;
 import tech.jhipster.lite.module.domain.JHipsterProjectFilePath;
-import tech.jhipster.lite.module.domain.JHipsterFileToMove;
-import tech.jhipster.lite.module.domain.JHipsterFilesToDelete;
-import tech.jhipster.lite.module.domain.file.JHipsterFilesToMove;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
 import tech.jhipster.lite.shared.error.domain.GeneratorException;
 

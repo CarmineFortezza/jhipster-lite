@@ -1,10 +1,8 @@
-package tech.jhipster.lite.module.domain.replacement;
+package tech.jhipster.lite.module.domain;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.function.Consumer;
-
-import tech.jhipster.lite.module.domain.ContentReplacer;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public record ContentReplacers(Collection<ContentReplacer> replacers) {

@@ -6,6 +6,7 @@ import static tech.jhipster.lite.module.domain.replacement.ReplacementCondition.
 import java.util.regex.Pattern;
 import org.junit.jupiter.api.Test;
 import tech.jhipster.lite.UnitTest;
+import tech.jhipster.lite.module.domain.RegexNeedleAfterReplacer;
 
 @UnitTest
 class RegexNeedleAfterReplacerTest {

@@ -1,9 +1,7 @@
-package tech.jhipster.lite.module.domain.file;
+package tech.jhipster.lite.module.domain;
 
 import java.util.Collection;
 import java.util.stream.Stream;
-
-import tech.jhipster.lite.module.domain.JHipsterFileToMove;
 import tech.jhipster.lite.shared.collection.domain.JHipsterCollections;
 
 public record JHipsterFilesToMove(Collection<JHipsterFileToMove> files) {

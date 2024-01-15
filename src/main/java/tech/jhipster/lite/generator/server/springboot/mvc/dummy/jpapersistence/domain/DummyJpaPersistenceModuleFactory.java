@@ -5,10 +5,10 @@ import static tech.jhipster.lite.module.domain.JHipsterModule.*;
 import java.util.regex.Pattern;
 import tech.jhipster.lite.module.domain.JHipsterModule;
 import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
-import tech.jhipster.lite.module.domain.file.JHipsterSource;
-import tech.jhipster.lite.module.domain.replacement.RegexNeedleBeforeReplacer;
-import tech.jhipster.lite.module.domain.replacement.ReplacementCondition;
+import tech.jhipster.lite.module.domain.RegexNeedleBeforeReplacer;
 import tech.jhipster.lite.module.domain.TextNeedleBeforeReplacer;
+import tech.jhipster.lite.module.domain.file.JHipsterSource;
+import tech.jhipster.lite.module.domain.replacement.ReplacementCondition;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class DummyJpaPersistenceModuleFactory {

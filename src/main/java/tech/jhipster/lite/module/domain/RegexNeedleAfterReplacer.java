@@ -1,8 +1,9 @@
-package tech.jhipster.lite.module.domain.replacement;
+package tech.jhipster.lite.module.domain;
 
 import java.util.function.BiFunction;
 import java.util.regex.Pattern;
-import tech.jhipster.lite.module.domain.JHipsterModule;
+import tech.jhipster.lite.module.domain.replacement.ElementReplacer;
+import tech.jhipster.lite.module.domain.replacement.ReplacementCondition;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public record RegexNeedleAfterReplacer(ReplacementCondition condition, Pattern pattern) implements ElementReplacer {

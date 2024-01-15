@@ -1,13 +1,10 @@
 package tech.jhipster.lite.module.domain;
 
-import tech.jhipster.lite.module.domain.file.JHipsterFilesToMove;
-import tech.jhipster.lite.module.domain.file.JHipsterTemplatedFiles;
 import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommands;
 import tech.jhipster.lite.module.domain.javaproperties.SpringComments;
 import tech.jhipster.lite.module.domain.javaproperties.SpringFactories;
 import tech.jhipster.lite.module.domain.javaproperties.SpringProperties;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
-import tech.jhipster.lite.module.domain.replacement.ContentReplacers;
 import tech.jhipster.lite.shared.error.domain.Assert;
 import tech.jhipster.lite.shared.generation.domain.ExcludeFromGeneratedCodeCoverage;
 

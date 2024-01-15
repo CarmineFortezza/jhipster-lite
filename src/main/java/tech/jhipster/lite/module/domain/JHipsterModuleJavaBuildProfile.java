@@ -1,12 +1,12 @@
-package tech.jhipster.lite.module.domain.javabuild.command;
+package tech.jhipster.lite.module.domain;
 
 import java.util.Map;
 import java.util.Optional;
+import tech.jhipster.lite.module.domain.JHipsterModuleJavaBuildProfiles.JHipsterModuleJavaBuildProfilesBuilder;
 import tech.jhipster.lite.module.domain.buildproperties.JHipsterModuleBuildProperties;
 import tech.jhipster.lite.module.domain.buildproperties.JHipsterModuleBuildProperties.JHipsterModuleBuildPropertiesBuilder;
 import tech.jhipster.lite.module.domain.buildproperties.PropertyKey;
 import tech.jhipster.lite.module.domain.buildproperties.PropertyValue;
-import tech.jhipster.lite.module.domain.javabuild.command.JHipsterModuleJavaBuildProfiles.JHipsterModuleJavaBuildProfilesBuilder;
 import tech.jhipster.lite.module.domain.javabuildprofile.BuildProfileActivation;
 import tech.jhipster.lite.module.domain.javabuildprofile.BuildProfileActivation.BuildProfileActivationBuilder;
 import tech.jhipster.lite.module.domain.javabuildprofile.BuildProfileId;

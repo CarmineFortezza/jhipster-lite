@@ -13,12 +13,12 @@ import tech.jhipster.lite.LogsSpy;
 import tech.jhipster.lite.LogsSpyExtension;
 import tech.jhipster.lite.TestFileUtils;
 import tech.jhipster.lite.UnitTest;
+import tech.jhipster.lite.module.domain.ContentReplacers;
 import tech.jhipster.lite.module.domain.GeneratedProjectRepository;
-import tech.jhipster.lite.module.domain.JHipsterProjectFilePath;
-import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
-import tech.jhipster.lite.module.domain.replacement.ContentReplacers;
 import tech.jhipster.lite.module.domain.JHipsterModuleMandatoryReplacementsFactory;
 import tech.jhipster.lite.module.domain.JHipsterModuleOptionalReplacementsFactory;
+import tech.jhipster.lite.module.domain.JHipsterProjectFilePath;
+import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
 import tech.jhipster.lite.module.domain.replacement.MandatoryReplacementException;
 import tech.jhipster.lite.module.domain.replacement.TextReplacer;
 

@@ -1,8 +1,6 @@
-package tech.jhipster.lite.module.domain.file;
+package tech.jhipster.lite.module.domain;
 
 import java.util.Collection;
-
-import tech.jhipster.lite.module.domain.JHipsterTemplatedFile;
 import tech.jhipster.lite.shared.collection.domain.JHipsterCollections;
 
 public record JHipsterTemplatedFiles(Collection<JHipsterTemplatedFile> files) {

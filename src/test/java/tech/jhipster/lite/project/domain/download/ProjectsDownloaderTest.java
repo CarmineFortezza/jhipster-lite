@@ -11,8 +11,9 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import tech.jhipster.lite.UnitTest;
 import tech.jhipster.lite.project.domain.ProjectPath;
-import tech.jhipster.lite.project.domain.ProjectsRepository;
 import tech.jhipster.lite.project.domain.UnknownProjectException;
+import tech.jhipster.lite.project.domain.history.ProjectsDownloader;
+import tech.jhipster.lite.project.domain.history.ProjectsRepository;
 import tech.jhipster.lite.shared.projectfolder.domain.ProjectFolder;
 
 @UnitTest

@@ -9,9 +9,9 @@ import java.nio.file.Paths;
 import java.util.Optional;
 import org.springframework.stereotype.Repository;
 import tech.jhipster.lite.project.domain.ProjectPath;
-import tech.jhipster.lite.project.domain.ProjectsRepository;
 import tech.jhipster.lite.project.domain.download.Project;
 import tech.jhipster.lite.project.domain.history.ProjectHistory;
+import tech.jhipster.lite.project.domain.history.ProjectsRepository;
 import tech.jhipster.lite.shared.error.domain.Assert;
 import tech.jhipster.lite.shared.error.domain.GeneratorException;
 

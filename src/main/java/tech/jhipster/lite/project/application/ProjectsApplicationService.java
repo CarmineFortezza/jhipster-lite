@@ -2,12 +2,12 @@ package tech.jhipster.lite.project.application;
 
 import org.springframework.stereotype.Service;
 import tech.jhipster.lite.project.domain.ProjectPath;
-import tech.jhipster.lite.project.domain.ProjectsRepository;
 import tech.jhipster.lite.project.domain.download.Project;
-import tech.jhipster.lite.project.domain.download.ProjectsDownloader;
 import tech.jhipster.lite.project.domain.history.ProjectActionToAppend;
 import tech.jhipster.lite.project.domain.history.ProjectActionsAppender;
 import tech.jhipster.lite.project.domain.history.ProjectHistory;
+import tech.jhipster.lite.project.domain.history.ProjectsDownloader;
+import tech.jhipster.lite.project.domain.history.ProjectsRepository;
 import tech.jhipster.lite.shared.projectfolder.domain.ProjectFolder;
 
 @Service

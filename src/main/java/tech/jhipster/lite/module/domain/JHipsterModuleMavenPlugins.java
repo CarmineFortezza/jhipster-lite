@@ -1,4 +1,4 @@
-package tech.jhipster.lite.module.domain.mavenplugin;
+package tech.jhipster.lite.module.domain;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -12,6 +12,7 @@ import tech.jhipster.lite.module.domain.javabuild.command.AddMavenPluginManageme
 import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommand;
 import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommands;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependenciesVersions;
+import tech.jhipster.lite.module.domain.mavenplugin.MavenPlugin;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class JHipsterModuleMavenPlugins {

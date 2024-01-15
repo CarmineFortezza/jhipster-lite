@@ -18,6 +18,8 @@ import tech.jhipster.lite.module.domain.JHipsterModuleFiles.JHipsterModuleFilesB
 import tech.jhipster.lite.module.domain.JHipsterModuleGradlePlugin.JHipsterModuleGradlePluginBuilder;
 import tech.jhipster.lite.module.domain.JHipsterModuleJavaDependencies.JHipsterModuleJavaDependenciesBuilder;
 import tech.jhipster.lite.module.domain.JHipsterModuleMandatoryReplacementsFactory.JHipsterModuleMandatoryReplacementsFactoryBuilder;
+import tech.jhipster.lite.module.domain.JHipsterModuleMavenBuildExtensions.JHipsterModuleMavenBuildExtensionsBuilder;
+import tech.jhipster.lite.module.domain.JHipsterModuleMavenPlugins.JHipsterModuleMavenPluginsBuilder;
 import tech.jhipster.lite.module.domain.JHipsterModuleOptionalReplacementsFactory.JHipsterModuleOptionalReplacementsFactoryBuilder;
 import tech.jhipster.lite.module.domain.JHipsterModulePackageJson.JHipsterModulePackageJsonBuilder;
 import tech.jhipster.lite.module.domain.JHipsterModulePostActions.JHipsterModulePostActionsBuilder;
@@ -37,8 +39,6 @@ import tech.jhipster.lite.module.domain.javabuild.GroupId;
 import tech.jhipster.lite.module.domain.javabuild.MavenBuildExtension;
 import tech.jhipster.lite.module.domain.javabuild.MavenBuildExtension.MavenBuildExtensionGroupIdBuilder;
 import tech.jhipster.lite.module.domain.javabuild.VersionSlug;
-import tech.jhipster.lite.module.domain.javabuild.command.JHipsterModuleMavenBuildExtensions;
-import tech.jhipster.lite.module.domain.javabuild.command.JHipsterModuleMavenBuildExtensions.JHipsterModuleMavenBuildExtensionsBuilder;
 import tech.jhipster.lite.module.domain.javabuild.command.JavaDependency;
 import tech.jhipster.lite.module.domain.javabuild.command.JavaDependency.JavaDependencyGroupIdBuilder;
 import tech.jhipster.lite.module.domain.javabuildprofile.BuildProfileActivation;
@@ -49,8 +49,6 @@ import tech.jhipster.lite.module.domain.javabuildprofile.JHipsterModuleJavaBuild
 import tech.jhipster.lite.module.domain.javadependency.DependencyId;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyVersion;
 import tech.jhipster.lite.module.domain.javaproperties.*;
-import tech.jhipster.lite.module.domain.mavenplugin.JHipsterModuleMavenPlugins;
-import tech.jhipster.lite.module.domain.mavenplugin.JHipsterModuleMavenPlugins.JHipsterModuleMavenPluginsBuilder;
 import tech.jhipster.lite.module.domain.mavenplugin.MavenPlugin;
 import tech.jhipster.lite.module.domain.mavenplugin.MavenPlugin.MavenPluginGroupIdBuilder;
 import tech.jhipster.lite.module.domain.mavenplugin.MavenPluginExecution;

@@ -5,6 +5,7 @@ import static tech.jhipster.lite.module.domain.JHipsterModulesFixture.*;
 
 import org.junit.jupiter.api.Test;
 import tech.jhipster.lite.UnitTest;
+import tech.jhipster.lite.module.domain.JHipsterModuleMavenPlugins;
 import tech.jhipster.lite.module.domain.javabuild.command.AddDirectMavenPlugin;
 import tech.jhipster.lite.module.domain.javabuild.command.AddMavenPluginManagement;
 import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommands;

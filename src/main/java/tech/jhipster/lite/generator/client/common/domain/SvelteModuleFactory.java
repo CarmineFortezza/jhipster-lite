@@ -1,4 +1,4 @@
-package tech.jhipster.lite.generator.client.svelte.core.domain;
+package tech.jhipster.lite.generator.client.common.domain;
 
 import static tech.jhipster.lite.generator.client.common.domain.ClientsModulesFactory.clientModuleBuilder;
 import static tech.jhipster.lite.module.domain.JHipsterModule.*;

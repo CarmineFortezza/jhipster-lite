@@ -1,14 +1,13 @@
-package tech.jhipster.lite.generator.client.vue.core.domain;
+package tech.jhipster.lite.generator.client.common.domain;
 
-import static tech.jhipster.lite.module.domain.JHipsterModule.*;
-import static tech.jhipster.lite.module.domain.packagejson.VersionSource.*;
-
-import tech.jhipster.lite.generator.client.common.domain.ClientsModulesFactory;
 import tech.jhipster.lite.module.domain.JHipsterModule;
 import tech.jhipster.lite.module.domain.file.JHipsterDestination;
 import tech.jhipster.lite.module.domain.file.JHipsterSource;
 import tech.jhipster.lite.module.domain.properties.JHipsterModuleProperties;
 import tech.jhipster.lite.shared.error.domain.Assert;
+
+import static tech.jhipster.lite.module.domain.JHipsterModule.*;
+import static tech.jhipster.lite.module.domain.packagejson.VersionSource.VUE;
 
 public class VueModulesFactory {
 

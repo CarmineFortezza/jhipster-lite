@@ -1,4 +1,4 @@
-package tech.jhipster.lite.module.infrastructure.secondary.javadependency;
+package tech.jhipster.lite.module.infrastructure.secondary;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -18,7 +18,8 @@ import tech.jhipster.lite.module.domain.javabuild.command.RemoveJavaDependencyMa
 import tech.jhipster.lite.module.domain.javabuild.command.SetBuildProperty;
 import tech.jhipster.lite.module.domain.javabuild.command.SetVersion;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
-import tech.jhipster.lite.module.infrastructure.secondary.GradleCommandHandler;
+import tech.jhipster.lite.module.infrastructure.secondary.javadependency.JavaDependenciesCommandHandler;
+import tech.jhipster.lite.module.infrastructure.secondary.javadependency.MissingJavaBuildConfigurationException;
 import tech.jhipster.lite.module.infrastructure.secondary.javadependency.maven.MavenCommandHandler;
 import tech.jhipster.lite.shared.error.domain.Assert;
 import tech.jhipster.lite.shared.generation.domain.ExcludeFromGeneratedCodeCoverage;

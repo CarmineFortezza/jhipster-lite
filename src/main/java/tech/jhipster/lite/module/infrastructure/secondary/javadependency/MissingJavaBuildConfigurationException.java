@@ -3,7 +3,7 @@ package tech.jhipster.lite.module.infrastructure.secondary.javadependency;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
 import tech.jhipster.lite.shared.error.domain.GeneratorException;
 
-class MissingJavaBuildConfigurationException extends GeneratorException {
+public class MissingJavaBuildConfigurationException extends GeneratorException {
 
   public MissingJavaBuildConfigurationException(JHipsterProjectFolder folder) {
     super(

@@ -12,7 +12,6 @@ import tech.jhipster.lite.module.domain.landscape.JHipsterModulesRepository;
 import tech.jhipster.lite.module.domain.landscape.JHipsterModulesResources;
 import tech.jhipster.lite.module.domain.npm.NpmVersions;
 import tech.jhipster.lite.module.domain.postaction.JHipsterModuleExecutionContext;
-import tech.jhipster.lite.module.infrastructure.secondary.javadependency.FileSystemJavaBuildCommandsHandler;
 import tech.jhipster.lite.project.infrastructure.primary.JavaProjects;
 import tech.jhipster.lite.shared.error.domain.Assert;
 

@@ -16,7 +16,7 @@ import tech.jhipster.lite.shared.collection.domain.JHipsterCollections;
 import tech.jhipster.lite.shared.error.domain.Assert;
 import tech.jhipster.lite.shared.generation.domain.ExcludeFromGeneratedCodeCoverage;
 
-public class JavaDependency {
+public class JavaDependency implements JavaDependencyInterfaceCD {
 
   private final DependencyId id;
   private final Optional<DependencySlug> dependencySlug;
@@ -80,11 +80,11 @@ public class JavaDependency {
     return SetVersion::new;
   }
 
-  public Collection<JavaBuildCommand> dependencyCommands(DependenciesCommandsFactory commands, Optional<JavaDependency> projectDependency) {
+  public Collection<JavaBuildCommand> dependencyCommands(DependenciesCommandsFactory commands, Optional<JavaDependencyInterfaceCD> projectDependency) {
     return projectDependency.map(toDependenciesCommands(commands)).orElseGet(() -> List.of(commands.addDependency(this)));
   }
 
-  private Function<JavaDependency, Collection<JavaBuildCommand>> toDependenciesCommands(DependenciesCommandsFactory commands) {
+  private Function<JavaDependencyInterfaceCD, Collection<JavaBuildCommand>> toDependenciesCommands(DependenciesCommandsFactory commands) {
     return projectDependency -> {
       JavaDependency resultingDependency = merge(projectDependency);
 
@@ -96,7 +96,7 @@ public class JavaDependency {
     };
   }
 
-  private JavaDependency merge(JavaDependency other) {
+  private JavaDependency merge(JavaDependencyInterfaceCD other) {
     return JavaDependency
       .builder()
       .groupId(groupId())
@@ -110,20 +110,20 @@ public class JavaDependency {
       .build();
   }
 
-  private DependencySlug mergeDependencySlugs(JavaDependency other) {
-    return dependencySlug.orElseGet(() -> other.dependencySlug.orElse(null));
+  private DependencySlug mergeDependencySlugs(JavaDependencyInterfaceCD other) {
+    return dependencySlug.orElseGet(() -> other.slug().orElse(null));
   }
 
-  private VersionSlug mergeVersionsSlugs(JavaDependency other) {
-    return versionSlug.orElseGet(() -> other.versionSlug.orElse(null));
+  private VersionSlug mergeVersionsSlugs(JavaDependencyInterfaceCD other) {
+    return versionSlug.orElseGet(() -> other.version().orElse(null));
   }
 
-  private JavaDependencyScope mergeScopes(JavaDependency other) {
-    return scope.merge(other.scope);
+  private JavaDependencyScope mergeScopes(JavaDependencyInterfaceCD other) {
+    return scope.merge(other.scope());
   }
 
-  private boolean mergeOptionalFlag(JavaDependency other) {
-    return optional && other.optional;
+  private boolean mergeOptionalFlag(JavaDependencyInterfaceCD other) {
+    return optional && other.optional();
   }
 
   public DependencyId id() {

@@ -9,6 +9,7 @@ import tech.jhipster.lite.module.domain.javabuild.ArtifactId;
 import tech.jhipster.lite.module.domain.javabuild.GroupId;
 import tech.jhipster.lite.module.domain.javabuild.VersionSlug;
 import tech.jhipster.lite.module.domain.javabuild.command.*;
+import tech.jhipster.lite.module.domain.javabuild.command.ProjectJavaDependencies;
 import tech.jhipster.lite.module.domain.javadependency.*;
 import tech.jhipster.lite.shared.error.domain.Assert;
 

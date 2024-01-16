@@ -26,7 +26,7 @@ public class JavaDependencies {
     return dependencies.stream().collect(Collectors.toUnmodifiableMap(JavaDependency::id, Function.identity()));
   }
 
-  public Optional<JavaDependency> get(DependencyId id) {
+  public Optional<JavaDependencyInterfaceCD> get(DependencyId id) {
     Assert.notNull("id", id);
 
     return Optional.ofNullable(dependencies.get(id));

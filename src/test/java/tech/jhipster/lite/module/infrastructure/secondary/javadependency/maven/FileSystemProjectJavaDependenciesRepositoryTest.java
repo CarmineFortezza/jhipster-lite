@@ -1,23 +1,20 @@
 package tech.jhipster.lite.module.infrastructure.secondary.javadependency.maven;
 
-import static org.assertj.core.api.Assertions.*;
-import static tech.jhipster.lite.module.domain.JHipsterModulesFixture.*;
-
 import org.junit.jupiter.api.Test;
 import tech.jhipster.lite.UnitTest;
 import tech.jhipster.lite.module.domain.javabuild.ArtifactId;
 import tech.jhipster.lite.module.domain.javabuild.GroupId;
 import tech.jhipster.lite.module.domain.javabuild.VersionSlug;
 import tech.jhipster.lite.module.domain.javabuild.command.JavaDependencies;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaDependency;
+import tech.jhipster.lite.module.domain.javabuild.command.JavaDependencyInterfaceCD;
 import tech.jhipster.lite.module.domain.javabuild.command.ProjectJavaDependencies;
-import tech.jhipster.lite.module.domain.javadependency.DependencyId;
-import tech.jhipster.lite.module.domain.javadependency.JavaDependencyClassifier;
-import tech.jhipster.lite.module.domain.javadependency.JavaDependencyScope;
-import tech.jhipster.lite.module.domain.javadependency.JavaDependencyVersion;
-import tech.jhipster.lite.module.domain.javadependency.ProjectJavaDependenciesVersions;
+import tech.jhipster.lite.module.domain.javadependency.*;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
 import tech.jhipster.lite.shared.error.domain.GeneratorException;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static tech.jhipster.lite.module.domain.JHipsterModulesFixture.*;
 
 @UnitTest
 class FileSystemProjectJavaDependenciesRepositoryTest {
@@ -71,7 +68,7 @@ class FileSystemProjectJavaDependenciesRepositoryTest {
   }
 
   private void assertJJWTDependency(JavaDependencies dependencies) {
-    JavaDependency jjwt = dependencies
+    JavaDependencyInterfaceCD jjwt = dependencies
       .get(
         DependencyId
           .builder()
@@ -89,7 +86,7 @@ class FileSystemProjectJavaDependenciesRepositoryTest {
   }
 
   private void assertLogstashDependency(JavaDependencies dependencies) {
-    JavaDependency jjwt = dependencies
+    JavaDependencyInterfaceCD jjwt = dependencies
       .get(DependencyId.of(new GroupId("net.logstash.logback"), new ArtifactId("logstash-logback-encoder")))
       .get();
     assertThat(jjwt.version()).isEmpty();

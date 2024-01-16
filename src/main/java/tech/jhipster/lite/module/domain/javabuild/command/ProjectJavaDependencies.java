@@ -44,11 +44,11 @@ public class ProjectJavaDependencies {
     return versions.get(slug);
   }
 
-  public Optional<JavaDependency> dependency(DependencyId id) {
+  public Optional<JavaDependencyInterfaceCD> dependency(DependencyId id) {
     return dependencies.get(id);
   }
 
-  public Optional<JavaDependency> dependencyManagement(DependencyId id) {
+  public Optional<JavaDependencyInterfaceCD> dependencyManagement(DependencyId id) {
     return dependenciesManagement.get(id);
   }
 

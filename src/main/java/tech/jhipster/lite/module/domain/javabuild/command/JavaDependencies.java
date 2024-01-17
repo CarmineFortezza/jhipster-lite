@@ -12,18 +12,18 @@ public class JavaDependencies {
 
   public static final JavaDependencies EMPTY = new JavaDependencies(null);
 
-  private final Map<DependencyId, JavaDependency> dependencies;
+  private final Map<DependencyId, JavaDependencyInterfaceCD> dependencies;
 
-  public JavaDependencies(Collection<JavaDependency> dependencies) {
+  public JavaDependencies(Collection<JavaDependencyInterfaceCD> dependencies) {
     this.dependencies = buildDependencies(dependencies);
   }
 
-  private Map<DependencyId, JavaDependency> buildDependencies(Collection<JavaDependency> dependencies) {
+  private Map<DependencyId, JavaDependencyInterfaceCD> buildDependencies(Collection<JavaDependencyInterfaceCD> dependencies) {
     if (dependencies == null) {
       return Map.of();
     }
 
-    return dependencies.stream().collect(Collectors.toUnmodifiableMap(JavaDependency::id, Function.identity()));
+    return dependencies.stream().collect(Collectors.toUnmodifiableMap(JavaDependencyInterfaceCD::id, Function.identity()));
   }
 
   public Optional<JavaDependencyInterfaceCD> get(DependencyId id) {

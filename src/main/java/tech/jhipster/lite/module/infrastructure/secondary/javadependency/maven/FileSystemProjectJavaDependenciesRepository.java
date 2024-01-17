@@ -15,10 +15,7 @@ import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
 import org.codehaus.plexus.util.xml.pull.XmlPullParserException;
 import org.springframework.stereotype.Repository;
 import tech.jhipster.lite.module.domain.javabuild.VersionSlug;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaDependencies;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaDependency;
-import tech.jhipster.lite.module.domain.javabuild.command.ProjectJavaDependencies;
-import tech.jhipster.lite.module.domain.javabuild.command.ProjectJavaDependenciesRepository;
+import tech.jhipster.lite.module.domain.javabuild.command.*;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyScope;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyType;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyVersion;
@@ -81,18 +78,18 @@ public class FileSystemProjectJavaDependenciesRepository implements ProjectJavaD
       return JavaDependencies.EMPTY;
     }
 
-    List<JavaDependency> mavenDependencies = dependencyManagement.getDependencies().stream().map(toJavaDependency()).toList();
+    List<JavaDependencyInterfaceCD> mavenDependencies = dependencyManagement.getDependencies().stream().map(toJavaDependency()).toList();
 
     return new JavaDependencies(mavenDependencies);
   }
 
   private JavaDependencies extractDependencies(Model pomContent) {
-    List<JavaDependency> mavenDependencies = pomContent.getDependencies().stream().map(toJavaDependency()).toList();
+    List<JavaDependencyInterfaceCD> mavenDependencies = pomContent.getDependencies().stream().map(toJavaDependency()).toList();
 
     return new JavaDependencies(mavenDependencies);
   }
 
-  private Function<Dependency, JavaDependency> toJavaDependency() {
+  private Function<Dependency, JavaDependencyInterfaceCD> toJavaDependency() {
     return dependency ->
       JavaDependency
         .builder()

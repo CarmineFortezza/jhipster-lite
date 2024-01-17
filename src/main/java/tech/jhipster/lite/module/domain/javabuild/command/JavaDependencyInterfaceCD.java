@@ -2,6 +2,7 @@ package tech.jhipster.lite.module.domain.javabuild.command;
 
 import tech.jhipster.lite.module.domain.javabuild.DependencySlug;
 import tech.jhipster.lite.module.domain.javabuild.VersionSlug;
+import tech.jhipster.lite.module.domain.javadependency.DependencyId;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyClassifier;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyScope;
 
@@ -18,4 +19,6 @@ public interface JavaDependencyInterfaceCD {
   boolean optional();
 
   Optional<JavaDependencyClassifier> classifier();
+
+  DependencyId id();
 }

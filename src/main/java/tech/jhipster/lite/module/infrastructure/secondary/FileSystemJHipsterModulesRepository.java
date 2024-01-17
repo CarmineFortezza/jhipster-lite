@@ -1,12 +1,9 @@
 package tech.jhipster.lite.module.infrastructure.secondary;
 
-import java.util.List;
-import java.util.Map;
 import org.springframework.stereotype.Repository;
 import tech.jhipster.lite.module.domain.JHipsterModuleApplied;
 import tech.jhipster.lite.module.domain.JHipsterModuleChanges;
 import tech.jhipster.lite.module.domain.ProjectFiles;
-import tech.jhipster.lite.module.domain.javaproperties.SpringPropertyType;
 import tech.jhipster.lite.module.domain.landscape.JHipsterLandscape;
 import tech.jhipster.lite.module.domain.landscape.JHipsterModulesRepository;
 import tech.jhipster.lite.module.domain.landscape.JHipsterModulesResources;
@@ -16,24 +13,7 @@ import tech.jhipster.lite.project.infrastructure.primary.JavaProjects;
 import tech.jhipster.lite.shared.error.domain.Assert;
 
 @Repository
-class FileSystemJHipsterModulesRepository implements JHipsterModulesRepository {
-
-  public static final String DEFAULT_MAIN_FOLDER = "src/main/resources/config/";
-  public static final String DEFAULT_TEST_FOLDER = "src/test/resources/config/";
-  public static final String TEST_META_INF_FOLDER = "src/test/resources/META-INF/";
-
-  public static Map<SpringPropertyType, List<String>> buildPaths() {
-    return Map.of(
-      SpringPropertyType.MAIN_PROPERTIES,
-      List.of(DEFAULT_MAIN_FOLDER, "src/main/resources/"),
-      SpringPropertyType.MAIN_BOOTSTRAP_PROPERTIES,
-      List.of(DEFAULT_MAIN_FOLDER, "src/main/resources/"),
-      SpringPropertyType.TEST_PROPERTIES,
-      List.of(DEFAULT_TEST_FOLDER, "src/test/resources/"),
-      SpringPropertyType.TEST_BOOTSTRAP_PROPERTIES,
-      List.of(DEFAULT_TEST_FOLDER, "src/test/resources/")
-    );
-  }
+class FileSystemJHipsterModulesRepository implements JHipsterModulesRepository, FileSystemJHipsterModulesRepositoryCD {
 
   private final JavaProjects projects;
   private final JHipsterModulesResources resources;

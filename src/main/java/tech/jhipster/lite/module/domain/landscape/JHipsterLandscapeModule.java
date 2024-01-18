@@ -53,7 +53,7 @@ public final class JHipsterLandscapeModule implements JHipsterLandscapeElement {
   }
 
   @Override
-  public Stream<JHipsterLandscapeModule> allModules() {
+  public Stream<JHipsterLandscapeElement> allModules() {
     return Stream.of(this);
   }
 

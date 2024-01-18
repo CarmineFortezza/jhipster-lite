@@ -54,12 +54,12 @@ public final class JHipsterLandscapeFeature implements JHipsterLandscapeElement 
   }
 
   @Override
-  public Stream<JHipsterLandscapeModule> allModules() {
-    return modules.stream();
+  public Stream<JHipsterLandscapeElement> allModules() {
+    return modules.stream().map(module -> (JHipsterLandscapeElement)module);
   }
 
   @Override
   public Stream<JHipsterSlug> slugs() {
-    return Stream.concat(Stream.of(slug()), allModules().map(JHipsterLandscapeModule::slug));
+    return Stream.concat(Stream.of(slug()), allModules().map(JHipsterLandscapeElement::slug));
   }
 }

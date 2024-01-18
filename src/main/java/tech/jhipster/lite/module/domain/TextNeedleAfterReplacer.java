@@ -7,6 +7,8 @@ import tech.jhipster.lite.shared.error.domain.Assert;
 import java.util.function.BiFunction;
 
 public record TextNeedleAfterReplacer(ReplacementCondition condition, String text) implements ElementReplacer {
+
+  public static final String LINE_BREAK = "\n";
   public TextNeedleAfterReplacer {
     Assert.notNull("condition", condition);
     Assert.notBlank("text", text);
@@ -22,7 +24,7 @@ public record TextNeedleAfterReplacer(ReplacementCondition condition, String tex
   @Override
   public BiFunction<String, String, String> replacement() {
     return (content, replacement) -> {
-      String replacementBlock = JHipsterModule.LINE_BREAK + replacement;
+      String replacementBlock = LINE_BREAK + replacement;
       return content.replaceAll(this.text, this.text + replacementBlock);
     };
   }

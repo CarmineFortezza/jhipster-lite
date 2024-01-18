@@ -14,18 +14,18 @@ public class DependenciesCommandsFactory {
     RemoveDirectJavaDependency::new
   );
 
-  private final Function<JavaDependency, JavaBuildCommand> addDependency;
+  private final Function<JavaDependencyInterfaceCD, JavaBuildCommand> addDependency;
   private final Function<DependencyId, JavaBuildCommand> removeDependency;
 
   private DependenciesCommandsFactory(
-    Function<JavaDependency, JavaBuildCommand> addDependency,
+    Function<JavaDependencyInterfaceCD, JavaBuildCommand> addDependency,
     Function<DependencyId, JavaBuildCommand> removeDependency
   ) {
     this.addDependency = addDependency;
     this.removeDependency = removeDependency;
   }
 
-  public JavaBuildCommand addDependency(JavaDependency javaDependency) {
+  public JavaBuildCommand addDependency(JavaDependencyInterfaceCD javaDependency) {
     return addDependency.apply(javaDependency);
   }
 

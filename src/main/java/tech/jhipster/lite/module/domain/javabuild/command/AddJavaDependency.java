@@ -9,7 +9,7 @@ import tech.jhipster.lite.module.domain.javadependency.JavaDependencyScope;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyType;
 
 public sealed interface AddJavaDependency permits AddDirectJavaDependency, AddJavaDependencyManagement {
-  JavaDependency dependency();
+  JavaDependencyInterfaceCD dependency();
 
   default Optional<VersionSlug> version() {
     return dependency().version();

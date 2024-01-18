@@ -17,18 +17,7 @@ import tech.jhipster.lite.module.domain.gradleplugin.GradleCommunityPlugin;
 import tech.jhipster.lite.module.domain.gradleplugin.GradleCorePlugin;
 import tech.jhipster.lite.module.domain.gradleplugin.GradlePluginConfiguration;
 import tech.jhipster.lite.module.domain.javabuild.DependencySlug;
-import tech.jhipster.lite.module.domain.javabuild.command.AddDirectJavaDependency;
-import tech.jhipster.lite.module.domain.javabuild.command.AddDirectMavenPlugin;
-import tech.jhipster.lite.module.domain.javabuild.command.AddGradlePlugin;
-import tech.jhipster.lite.module.domain.javabuild.command.AddJavaBuildProfile;
-import tech.jhipster.lite.module.domain.javabuild.command.AddJavaDependencyManagement;
-import tech.jhipster.lite.module.domain.javabuild.command.AddMavenBuildExtension;
-import tech.jhipster.lite.module.domain.javabuild.command.AddMavenPluginManagement;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaDependency;
-import tech.jhipster.lite.module.domain.javabuild.command.RemoveDirectJavaDependency;
-import tech.jhipster.lite.module.domain.javabuild.command.RemoveJavaDependencyManagement;
-import tech.jhipster.lite.module.domain.javabuild.command.SetBuildProperty;
-import tech.jhipster.lite.module.domain.javabuild.command.SetVersion;
+import tech.jhipster.lite.module.domain.javabuild.command.*;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyScope;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
 import tech.jhipster.lite.module.domain.replacement.MandatoryReplacer;
@@ -87,7 +76,7 @@ public class GradleCommandHandler implements JavaDependenciesCommandHandler {
     addDependencyToBuildGradle(command.dependency());
   }
 
-  private void addDependencyToBuildGradle(JavaDependency dependency) {
+  private void addDependencyToBuildGradle(JavaDependencyInterfaceCD dependency) {
     GradleDependencyScope gradleScope = gradleDependencyScope(dependency);
 
     String libraryVersionCatalogReference = "libs.%s".formatted(VersionsCatalog.dependencySlug(dependency).replace("-", "."));
@@ -107,7 +96,7 @@ public class GradleCommandHandler implements JavaDependenciesCommandHandler {
     );
   }
 
-  private static GradleDependencyScope gradleDependencyScope(JavaDependency dependency) {
+  private static GradleDependencyScope gradleDependencyScope(JavaDependencyInterfaceCD dependency) {
     return switch (dependency.scope()) {
       case TEST -> GradleDependencyScope.TEST_IMPLEMENTATION;
       case PROVIDED -> GradleDependencyScope.COMPILE_ONLY;

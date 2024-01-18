@@ -5,18 +5,19 @@ import com.electronwill.nightconfig.core.Config.Entry;
 import com.electronwill.nightconfig.core.UnmodifiableConfig;
 import com.electronwill.nightconfig.core.file.FileConfig;
 import com.electronwill.nightconfig.core.io.ParsingException;
+import tech.jhipster.lite.module.domain.gradleplugin.GradleCommunityPlugin;
+import tech.jhipster.lite.module.domain.gradleplugin.GradlePluginSlug;
+import tech.jhipster.lite.module.domain.javabuild.DependencySlug;
+import tech.jhipster.lite.module.domain.javabuild.command.JavaDependencyInterfaceCD;
+import tech.jhipster.lite.module.domain.javadependency.DependencyId;
+import tech.jhipster.lite.module.domain.javadependency.JavaDependencyVersion;
+import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collection;
 import java.util.List;
 import java.util.function.Predicate;
-import tech.jhipster.lite.module.domain.gradleplugin.GradleCommunityPlugin;
-import tech.jhipster.lite.module.domain.gradleplugin.GradlePluginSlug;
-import tech.jhipster.lite.module.domain.javabuild.DependencySlug;
-import tech.jhipster.lite.module.domain.javadependency.DependencyId;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaDependency;
-import tech.jhipster.lite.module.domain.javadependency.JavaDependencyVersion;
-import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
 
 public class VersionsCatalog {
 
@@ -55,7 +56,7 @@ public class VersionsCatalog {
     tomlConfigFile.save();
   }
 
-  public static String dependencySlug(JavaDependency dependency) {
+  public static String dependencySlug(JavaDependencyInterfaceCD dependency) {
     return dependency.slug().map(DependencySlug::slug).orElse(dependency.id().artifactId().get());
   }
 
@@ -64,7 +65,7 @@ public class VersionsCatalog {
     save();
   }
 
-  public void addLibrary(JavaDependency dependency) {
+  public void addLibrary(JavaDependencyInterfaceCD dependency) {
     Config libraryConfig = Config.inMemory();
     libraryConfig.set("group", dependency.id().groupId().get());
     libraryConfig.set("name", dependency.id().artifactId().get());

@@ -1,13 +1,14 @@
 package tech.jhipster.lite.module.infrastructure.secondary.javadependency;
 
-import java.util.Collection;
-import java.util.List;
-import java.util.stream.Stream;
 import tech.jhipster.lite.module.domain.ProjectFiles;
-import tech.jhipster.lite.module.domain.javabuild.command.ProjectJavaDependenciesRepository;
+import tech.jhipster.lite.module.domain.ProjectJavaDependenciesRepository;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependenciesVersionsRepository;
 import tech.jhipster.lite.module.infrastructure.secondary.javadependency.maven.FileSystemProjectJavaDependenciesRepository;
 import tech.jhipster.lite.shared.error.domain.Assert;
+
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Stream;
 
 public final class JavaDependenciesFixture {
 

@@ -2,12 +2,12 @@ package tech.jhipster.lite.module.infrastructure.secondary.javadependency.maven;
 
 import org.junit.jupiter.api.Test;
 import tech.jhipster.lite.UnitTest;
+import tech.jhipster.lite.module.domain.JavaDependencies;
+import tech.jhipster.lite.module.domain.JavaDependencyInterfaceCD;
+import tech.jhipster.lite.module.domain.ProjectJavaDependencies;
 import tech.jhipster.lite.module.domain.javabuild.ArtifactId;
 import tech.jhipster.lite.module.domain.javabuild.GroupId;
 import tech.jhipster.lite.module.domain.javabuild.VersionSlug;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaDependencies;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaDependencyInterfaceCD;
-import tech.jhipster.lite.module.domain.javabuild.command.ProjectJavaDependencies;
 import tech.jhipster.lite.module.domain.javadependency.*;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
 import tech.jhipster.lite.shared.error.domain.GeneratorException;

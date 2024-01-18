@@ -1,19 +1,15 @@
 package tech.jhipster.lite.module.application;
 
-import java.util.Collection;
 import org.springframework.stereotype.Service;
-import tech.jhipster.lite.module.domain.GeneratedProjectRepository;
-import tech.jhipster.lite.module.domain.JHipsterModuleApplied;
-import tech.jhipster.lite.module.domain.JHipsterModuleEvents;
-import tech.jhipster.lite.module.domain.JHipsterModuleToApply;
-import tech.jhipster.lite.module.domain.JHipsterModulesToApply;
+import tech.jhipster.lite.module.domain.*;
 import tech.jhipster.lite.module.domain.git.GitRepository;
-import tech.jhipster.lite.module.domain.javabuild.command.ProjectJavaDependenciesRepository;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependenciesVersionsRepository;
 import tech.jhipster.lite.module.domain.landscape.JHipsterLandscape;
 import tech.jhipster.lite.module.domain.landscape.JHipsterModulesApplyer;
 import tech.jhipster.lite.module.domain.landscape.JHipsterModulesRepository;
 import tech.jhipster.lite.module.domain.landscape.JHipsterModulesResources;
+
+import java.util.Collection;
 
 @Service
 public class JHipsterModulesApplicationService {

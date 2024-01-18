@@ -1,23 +1,11 @@
 package tech.jhipster.lite.module.infrastructure.secondary;
 
-import static tech.jhipster.lite.module.domain.JHipsterModule.LINE_BREAK;
-import static tech.jhipster.lite.module.domain.replacement.ReplacementCondition.always;
-import static tech.jhipster.lite.module.infrastructure.secondary.javadependency.gradle.VersionsCatalog.pluginSlug;
-
-import java.util.regex.Pattern;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import org.apache.commons.lang3.NotImplementedException;
-import tech.jhipster.lite.module.domain.ContentReplacers;
-import tech.jhipster.lite.module.domain.Indentation;
-import tech.jhipster.lite.module.domain.JHipsterProjectFilePath;
-import tech.jhipster.lite.module.domain.MandatoryFileReplacer;
-import tech.jhipster.lite.module.domain.RegexNeedleBeforeReplacer;
+import tech.jhipster.lite.module.domain.*;
 import tech.jhipster.lite.module.domain.gradleplugin.GradleCommunityPlugin;
 import tech.jhipster.lite.module.domain.gradleplugin.GradleCorePlugin;
 import tech.jhipster.lite.module.domain.gradleplugin.GradlePluginConfiguration;
 import tech.jhipster.lite.module.domain.javabuild.DependencySlug;
-import tech.jhipster.lite.module.domain.javabuild.command.*;
 import tech.jhipster.lite.module.domain.javadependency.JavaDependencyScope;
 import tech.jhipster.lite.module.domain.properties.JHipsterProjectFolder;
 import tech.jhipster.lite.module.domain.replacement.MandatoryReplacer;
@@ -26,6 +14,14 @@ import tech.jhipster.lite.module.infrastructure.secondary.javadependency.JavaDep
 import tech.jhipster.lite.module.infrastructure.secondary.javadependency.gradle.GradleDependencyScope;
 import tech.jhipster.lite.module.infrastructure.secondary.javadependency.gradle.VersionsCatalog;
 import tech.jhipster.lite.shared.error.domain.Assert;
+
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+import static tech.jhipster.lite.module.domain.JHipsterModule.LINE_BREAK;
+import static tech.jhipster.lite.module.domain.replacement.ReplacementCondition.always;
+import static tech.jhipster.lite.module.infrastructure.secondary.javadependency.gradle.VersionsCatalog.pluginSlug;
 
 public class GradleCommandHandler implements JavaDependenciesCommandHandler {
 

@@ -1,19 +1,15 @@
 package tech.jhipster.lite.module.domain;
 
+import tech.jhipster.lite.module.domain.AddDirectMavenPlugin.AddDirectMavenPluginOptionalBuilder;
+import tech.jhipster.lite.module.domain.AddMavenPluginManagement.AddMavenPluginManagementOptionalBuilder;
+import tech.jhipster.lite.module.domain.JHipsterModule.JHipsterModuleBuilder;
+import tech.jhipster.lite.module.domain.javadependency.JavaDependenciesVersions;
+import tech.jhipster.lite.shared.error.domain.Assert;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.function.Function;
 import java.util.stream.Stream;
-import tech.jhipster.lite.module.domain.JHipsterModule.JHipsterModuleBuilder;
-import tech.jhipster.lite.module.domain.javabuild.command.AddDirectMavenPlugin;
-import tech.jhipster.lite.module.domain.javabuild.command.AddDirectMavenPlugin.AddDirectMavenPluginOptionalBuilder;
-import tech.jhipster.lite.module.domain.javabuild.command.AddMavenPluginManagement;
-import tech.jhipster.lite.module.domain.javabuild.command.AddMavenPluginManagement.AddMavenPluginManagementOptionalBuilder;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommand;
-import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommands;
-import tech.jhipster.lite.module.domain.javadependency.JavaDependenciesVersions;
-import tech.jhipster.lite.module.domain.mavenplugin.MavenPlugin;
-import tech.jhipster.lite.shared.error.domain.Assert;
 
 public class JHipsterModuleMavenPlugins {
 

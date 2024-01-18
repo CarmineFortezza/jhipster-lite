@@ -7,7 +7,7 @@ import static tech.jhipster.lite.module.domain.JHipsterModulesFixture.*;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 import tech.jhipster.lite.UnitTest;
-import tech.jhipster.lite.module.domain.javabuild.command.*;
+import tech.jhipster.lite.module.domain.*;
 
 @UnitTest
 class JavaDependencyManagementTest {

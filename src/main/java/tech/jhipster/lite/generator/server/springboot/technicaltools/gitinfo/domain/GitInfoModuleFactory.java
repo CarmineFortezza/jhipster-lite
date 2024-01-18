@@ -1,13 +1,13 @@
 package tech.jhipster.lite.generator.server.springboot.technicaltools.gitinfo.domain;
 
-import static tech.jhipster.lite.module.domain.JHipsterModule.*;
-
 import tech.jhipster.lite.module.domain.JHipsterModule;
 import tech.jhipster.lite.module.domain.JHipsterModuleProperties;
+import tech.jhipster.lite.module.domain.MavenPlugin;
 import tech.jhipster.lite.module.domain.file.JHipsterDestination;
 import tech.jhipster.lite.module.domain.file.JHipsterSource;
-import tech.jhipster.lite.module.domain.mavenplugin.MavenPlugin;
 import tech.jhipster.lite.shared.error.domain.Assert;
+
+import static tech.jhipster.lite.module.domain.JHipsterModule.*;
 
 public class GitInfoModuleFactory {
 

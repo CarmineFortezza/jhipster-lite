@@ -1,9 +1,11 @@
 package tech.jhipster.lite.project.domain.history;
 
+import tech.jhipster.lite.project.domain.ProjectHistory;
+import tech.jhipster.lite.project.domain.ProjectPath;
+
 import java.time.Instant;
 import java.util.List;
 import java.util.Map;
-import tech.jhipster.lite.project.domain.ProjectPath;
 
 public final class ProjectHistoryFixture {
 

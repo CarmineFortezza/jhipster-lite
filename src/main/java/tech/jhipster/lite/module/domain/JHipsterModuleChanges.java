@@ -1,6 +1,5 @@
 package tech.jhipster.lite.module.domain;
 
-import tech.jhipster.lite.module.domain.javabuild.command.JavaBuildCommands;
 import tech.jhipster.lite.module.domain.javaproperties.SpringComments;
 import tech.jhipster.lite.module.domain.javaproperties.SpringFactories;
 import tech.jhipster.lite.module.domain.javaproperties.SpringProperties;
